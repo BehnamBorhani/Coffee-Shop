@@ -1,3 +1,6 @@
+import { AppProvider } from "@/contexts/app/app-context";
+import Navbar from "./_components/navbar/navbar";
+import SVGSymbols from "./_components/svg/svg-symbols";
 import "./globals.css";
 import localFont from "next/font/local";
 
@@ -52,8 +55,18 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="fa" className={`${dana.variable} ${morabba.variable}`}>
-      <body>{children}</body>
+    <html
+      lang="fa"
+      dir="rtl"
+      className={`dark ${dana.variable} ${morabba.variable}`}
+    >
+      <body className="bg-gray-100 dark:bg-zinc-800">
+        <SVGSymbols />
+        <AppProvider>
+          <Navbar />
+          {children}
+        </AppProvider>
+      </body>
     </html>
   );
 }
