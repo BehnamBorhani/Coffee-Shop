@@ -4,7 +4,8 @@ import appReducer from "./app-reducer";
 
 const AppContext = createContext();
 const initialState = {
-  theme: localStorage.getItem("theme") || "dark",
+  theme: "dark",
+  isOverlayShow: false,
 };
 
 const AppProvider = ({ children }) => {
@@ -14,12 +15,16 @@ const AppProvider = ({ children }) => {
     dispatch({ type: "CHANGE_THEME", payload: theme });
   };
 
+  const changeOverlayShow = (isOverlayShow) => {
+    dispatch({ type: "CHANGE_OVERLAY_SHOW", payload: isOverlayShow });
+  };
+
   useEffect(() => {
     localStorage.setItem("theme", state.theme);
   }, [state.theme]);
 
   return (
-    <AppContext.Provider value={{ ...state, changeTheme }}>
+    <AppContext.Provider value={{ ...state, changeTheme, changeOverlayShow }}>
       {children}
     </AppContext.Provider>
   );

@@ -3,6 +3,7 @@ import Navbar from "./_components/navbar/navbar";
 import SVGSymbols from "./_components/svg/svg-symbols";
 import "./globals.css";
 import localFont from "next/font/local";
+import Overlay from "./_components/overlay/overlay";
 
 const dana = localFont({
   src: [
@@ -65,6 +66,7 @@ export default function RootLayout({ children }) {
         <AppProvider>
           <Navbar />
           {children}
+          <Overlay />
         </AppProvider>
       </body>
     </html>

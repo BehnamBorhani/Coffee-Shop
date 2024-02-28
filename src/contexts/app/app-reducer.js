@@ -6,6 +6,12 @@ const appReducer = (state, action) => {
         theme: action.payload,
       };
     }
+    case "CHANGE_OVERLAY_SHOW": {
+      return {
+        ...state,
+        isOverlayShow: action.payload,
+      };
+    }
   }
 };
 
