@@ -71,6 +71,73 @@ export default function Home() {
             </div>
           </div>
         </section>
+
+        <section class="products-categories mb-10 md:mb-20">
+          <div class="container">
+            <div class="flex items-center justify-center flex-wrap gap-y-6 gap-x-[29px] md:gap-x-[65px] ">
+              <div class="w-25 md:w-50 text-center">
+                <a href="#">
+                  <img
+                    src="/images/categories/category1.png"
+                    loading="lazy"
+                    alt=""
+                  />
+                  <span class="inline-block mt-1.5 md:mt-2.5 font-DanaDemibold text-sm md:text-xl text-zinc-700 dark:text-white">
+                    قهوه دمی و اسپرسو
+                  </span>
+                </a>
+              </div>
+              <div class="w-25 md:w-50 text-center">
+                <a href="#">
+                  <img
+                    src="/images/categories/category2.png"
+                    loading="lazy"
+                    alt=""
+                  />
+                  <span class="inline-block mt-1.5 md:mt-2.5 font-DanaDemibold text-sm md:text-xl text-zinc-700 dark:text-white">
+                    اوازم جانبی و تجهیزات
+                  </span>
+                </a>
+              </div>
+              <div class="w-25 md:w-50 text-center">
+                <a href="#">
+                  <img
+                    src="/images/categories/category3.png"
+                    loading="lazy"
+                    alt=""
+                  />
+                  <span class="inline-block mt-1.5 md:mt-2.5 font-DanaDemibold text-sm md:text-xl text-zinc-700 dark:text-white">
+                    اسپرسوساز
+                  </span>
+                </a>
+              </div>
+              <div class="w-25 md:w-50 text-center">
+                <a href="#">
+                  <img
+                    src="/images/categories/category4.png"
+                    loading="lazy"
+                    alt=""
+                  />
+                  <span class="inline-block mt-1.5 md:mt-2.5 font-DanaDemibold text-sm md:text-xl text-zinc-700 dark:text-white">
+                    پک تستر قهوه
+                  </span>
+                </a>
+              </div>
+              <div class="w-25 md:w-50 text-center">
+                <a href="#">
+                  <img
+                    src="/images/categories/category5.png"
+                    loading="lazy"
+                    alt=""
+                  />
+                  <span class="inline-block mt-1.5 md:mt-2.5 font-DanaDemibold text-sm md:text-xl text-zinc-700 dark:text-white">
+                    قهوه ترک
+                  </span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
       </main>
     </>
   );
