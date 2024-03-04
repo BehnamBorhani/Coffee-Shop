@@ -31,7 +31,7 @@ const Navbar = () => {
   return (
     <>
       {/* APP HEADER */}
-      <header className="fixed top-9 right-0 left-0 bg-black/50 h-24 w-[98%] lg:w-[90%] mx-auto rounded-3xl hidden md:flex items-center px-5 lg:px-10 py-5 backdrop-blur-[6px]">
+      <header className="fixed top-9 right-0 left-0 bg-black/50 h-24 w-[98%] lg:w-[90%] mx-auto rounded-3xl hidden md:flex items-center px-5 lg:px-10 py-5 backdrop-blur-[6px] z-50">
         <div className="flex w-full items-center justify-between  ">
           {/* LOGO & Menu */}
           <nav className="flex items-center gap-x-6 lg:gap-x-9 h-14">
