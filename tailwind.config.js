@@ -43,8 +43,8 @@ module.exports = {
         },
       },
       backgroundImage: {
-        "header-mobile": "url(../images/headerBgMobile.webp)",
-        "header-desktop": "url(../images/headerBgDesktop.webp)",
+        "header-mobile": "url(/images/headerBgMobile.webp)",
+        "header-desktop": "url(/images/headerBgDesktop.webp)",
       },
       backgroundSize: {
         100: "100%",
