@@ -4,6 +4,7 @@ import { useEffect } from "react";
 import Header from "./_components/header/header";
 import ProductCard from "./_components/product-card/product-card";
 import Link from "next/link";
+import BestSellingProducts from "./_components/best-selling-products/best-selling-products";
 
 export default function Home() {
   const { theme } = useAppContext();
@@ -136,6 +137,32 @@ export default function Home() {
                 </a>
               </div>
             </div>
+          </div>
+        </section>
+
+        <section class="best-selling mb-8 md:mb-20">
+          <div class="container">
+            {/* section Head */}
+            <div class="flex items-end justify-between mb-5 md:mb-12 select-none">
+              <div>
+                <h3 class="section-title">محصولات پرفروش</h3>
+                <span class="section-subtitle">پیشنهاد قهوه خورها ... </span>
+              </div>
+              <div class="flex gap-x-3 md:gap-x-[18px] lg:gap-x-[20px]">
+                <div class="swiper-button-prev-custom flex-center w-9 h-9 md:w-10 md:h10 bg-white text-zinc-700 shadow-normal rounded-full hover:bg-gray-300 dark:hover:text-zinc-700 transition-all cursor-pointer">
+                  <svg class="w-5 h-5 md:w-[26px] md:h-[26px] rotate-180">
+                    <use href="#chevron-left-mini"></use>
+                  </svg>
+                </div>
+                <div class="swiper-button-next-custom flex-center w-9 h-9 md:w-10 md:h10 bg-white text-zinc-700 shadow-normal rounded-full hover:bg-gray-300 dark:hover:text-zinc-700 transition-all cursor-pointer">
+                  <svg class="w-5 h-5 md:w-[26px] md:h-[26px]">
+                    <use href="#chevron-left-mini"></use>
+                  </svg>
+                </div>
+              </div>
+            </div>
+
+            <BestSellingProducts />
           </div>
         </section>
       </main>

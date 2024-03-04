@@ -20,7 +20,7 @@
     "react-select": "^5.8.0",
     "recharts": "^2.10.3",
     "sweetalert": "^2.1.2",
-    "swiper": "^11.0.4"
+    "swiper": "^11.0.7"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.17",
