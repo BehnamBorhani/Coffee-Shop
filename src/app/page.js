@@ -6,6 +6,7 @@ import ProductCard from "./_components/product-card/product-card";
 import Link from "next/link";
 import BestSellingProducts from "./_components/best-selling-products/best-selling-products";
 import Image from "next/image";
+import BlogPostCardList from "./_components/blog-post-card-list/blog-post-card-list";
 
 export default function Home() {
   const { theme } = useAppContext();
@@ -228,6 +229,28 @@ export default function Home() {
                 </div>
               </div>
             </div>
+          </div>
+        </section>
+
+        <section class="blogs mb-8 md:mb-28">
+          <div class="container">
+            {/* section Header */}
+            <div class="flex items-end justify-between mb-5 md:mb-12">
+              <div>
+                <h2 class="section-title">مطالب خواندنی</h2>
+              </div>
+
+              <a href="#" class="section-link">
+                <span class="hidden md:inline-block">مشاهده همه مطالب</span>
+                <span class="inline-block md:hidden">مشاهده همه</span>
+                <svg class="w-5 h-5">
+                  <use href="#chevron-left-mini"></use>
+                </svg>
+              </a>
+            </div>
+
+            {/* section body */}
+            <BlogPostCardList />
           </div>
         </section>
       </main>
