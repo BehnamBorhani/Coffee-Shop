@@ -18,26 +18,30 @@ export default function Home() {
     <>
       <Header />
       <main className="">
-        <section class="products pt-8 md:pt-24 lg:pt-48">
-          <div class="container px-4 md:px-0">
+        <section className="products pt-8 md:pt-24 lg:pt-48">
+          <div className="container px-4 md:px-0">
             {/* section Header */}
-            <div class="flex items-end justify-between mb-5 md:mb-12">
+            <div className="flex items-end justify-between mb-5 md:mb-12">
               <div>
-                <h2 class="section-title">جدیدترین محصولات</h2>
-                <span class="section-subtitle">فراوری شده از دانه قهوه</span>
+                <h2 className="section-title">جدیدترین محصولات</h2>
+                <span className="section-subtitle">
+                  فراوری شده از دانه قهوه
+                </span>
               </div>
 
-              <Link href="#" class="section-link">
-                <span class="hidden md:inline-block">مشاهده همه محصولات</span>
-                <span class="inline-block md:hidden">مشاهده همه</span>
-                <svg class="w-5 h-5">
+              <Link href="#" className="section-link">
+                <span className="hidden md:inline-block">
+                  مشاهده همه محصولات
+                </span>
+                <span className="inline-block md:hidden">مشاهده همه</span>
+                <svg className="w-5 h-5">
                   <use href="#chevron-left-mini"></use>
                 </svg>
               </Link>
             </div>
 
             {/* section Body */}
-            <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3.5 md:gap-5 ">
+            <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3.5 md:gap-5 ">
               <ProductCard />
               <ProductCard />
               <ProductCard />
@@ -46,28 +50,28 @@ export default function Home() {
           </div>
         </section>
 
-        <section class="category-banner mt-8 mb-10 md:my-20">
-          <div class="container">
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-5 text-white">
+        <section className="category-banner mt-8 mb-10 md:my-20">
+          <div className="container">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-5 text-white">
               <a
                 href="#"
-                class="category-banner_item1 flex flex-col pr-7 md:pr-12 justify-center rounded-2xl h-[142px] md:h-[248px]"
+                className="category-banner_item1 flex flex-col pr-7 md:pr-12 justify-center rounded-2xl h-[142px] md:h-[248px]"
               >
-                <span class="font-DanaDemibold text-2xl/6 md:text-4xl/6 mb-4 md:mb-7">
+                <span className="font-DanaDemibold text-2xl/6 md:text-4xl/6 mb-4 md:mb-7">
                   انواع قهوه
                 </span>
-                <span class="md:font-DanaMedium md:text-xl/6">
+                <span className="md:font-DanaMedium md:text-xl/6">
                   ترکیبی و تک خاستگاه
                 </span>
               </a>
               <a
                 href="#"
-                class="category-banner_item2 flex flex-col pr-7 md:pr-12 justify-center rounded-2xl h-[142px] md:h-[248px]"
+                className="category-banner_item2 flex flex-col pr-7 md:pr-12 justify-center rounded-2xl h-[142px] md:h-[248px]"
               >
-                <span class="font-DanaDemibold text-2xl/6 md:text-4xl/6 mb-4 md:mb-7">
+                <span className="font-DanaDemibold text-2xl/6 md:text-4xl/6 mb-4 md:mb-7">
                   پودرهای فوری
                 </span>
-                <span class="md:font-DanaMedium md:text-xl/6">
+                <span className="md:font-DanaMedium md:text-xl/6">
                   نسکافه، هات چاکلت، ماسالا{" "}
                 </span>
               </a>
@@ -75,65 +79,75 @@ export default function Home() {
           </div>
         </section>
 
-        <section class="products-categories mb-10 md:mb-20">
-          <div class="container">
-            <div class="flex items-center justify-center flex-wrap gap-y-6 gap-x-[29px] md:gap-x-[65px] ">
-              <div class="w-25 md:w-50 text-center">
+        <section className="products-categories mb-10 md:mb-20">
+          <div className="container">
+            <div className="flex items-center justify-center flex-wrap gap-y-6 gap-x-[29px] md:gap-x-[65px] ">
+              <div className="w-25 md:w-50 text-center">
                 <a href="#">
-                  <img
+                  <Image
+                    width={200}
+                    height={200}
                     src="/images/categories/category1.png"
                     loading="lazy"
                     alt=""
                   />
-                  <span class="inline-block mt-1.5 md:mt-2.5 font-DanaDemibold text-sm md:text-xl text-zinc-700 dark:text-white">
+                  <span className="inline-block mt-1.5 md:mt-2.5 font-DanaDemibold text-sm md:text-xl text-zinc-700 dark:text-white">
                     قهوه دمی و اسپرسو
                   </span>
                 </a>
               </div>
-              <div class="w-25 md:w-50 text-center">
+              <div className="w-25 md:w-50 text-center">
                 <a href="#">
-                  <img
+                  <Image
+                    width={200}
+                    height={200}
                     src="/images/categories/category2.png"
                     loading="lazy"
                     alt=""
                   />
-                  <span class="inline-block mt-1.5 md:mt-2.5 font-DanaDemibold text-sm md:text-xl text-zinc-700 dark:text-white">
+                  <span className="inline-block mt-1.5 md:mt-2.5 font-DanaDemibold text-sm md:text-xl text-zinc-700 dark:text-white">
                     اوازم جانبی و تجهیزات
                   </span>
                 </a>
               </div>
-              <div class="w-25 md:w-50 text-center">
+              <div className="w-25 md:w-50 text-center">
                 <a href="#">
-                  <img
+                  <Image
+                    width={200}
+                    height={200}
                     src="/images/categories/category3.png"
                     loading="lazy"
                     alt=""
                   />
-                  <span class="inline-block mt-1.5 md:mt-2.5 font-DanaDemibold text-sm md:text-xl text-zinc-700 dark:text-white">
+                  <span className="inline-block mt-1.5 md:mt-2.5 font-DanaDemibold text-sm md:text-xl text-zinc-700 dark:text-white">
                     اسپرسوساز
                   </span>
                 </a>
               </div>
-              <div class="w-25 md:w-50 text-center">
+              <div className="w-25 md:w-50 text-center">
                 <a href="#">
-                  <img
+                  <Image
+                    width={200}
+                    height={200}
                     src="/images/categories/category4.png"
                     loading="lazy"
                     alt=""
                   />
-                  <span class="inline-block mt-1.5 md:mt-2.5 font-DanaDemibold text-sm md:text-xl text-zinc-700 dark:text-white">
+                  <span className="inline-block mt-1.5 md:mt-2.5 font-DanaDemibold text-sm md:text-xl text-zinc-700 dark:text-white">
                     پک تستر قهوه
                   </span>
                 </a>
               </div>
-              <div class="w-25 md:w-50 text-center">
+              <div className="w-25 md:w-50 text-center">
                 <a href="#">
-                  <img
+                  <Image
+                    width={200}
+                    height={200}
                     src="/images/categories/category5.png"
                     loading="lazy"
                     alt=""
                   />
-                  <span class="inline-block mt-1.5 md:mt-2.5 font-DanaDemibold text-sm md:text-xl text-zinc-700 dark:text-white">
+                  <span className="inline-block mt-1.5 md:mt-2.5 font-DanaDemibold text-sm md:text-xl text-zinc-700 dark:text-white">
                     قهوه ترک
                   </span>
                 </a>
@@ -142,22 +156,24 @@ export default function Home() {
           </div>
         </section>
 
-        <section class="best-selling mb-8 md:mb-20">
-          <div class="container">
+        <section className="best-selling mb-8 md:mb-20">
+          <div className="container">
             {/* section Head */}
-            <div class="flex items-end justify-between mb-5 md:mb-12 select-none">
+            <div className="flex items-end justify-between mb-5 md:mb-12 select-none">
               <div>
-                <h3 class="section-title">محصولات پرفروش</h3>
-                <span class="section-subtitle">پیشنهاد قهوه خورها ... </span>
+                <h3 className="section-title">محصولات پرفروش</h3>
+                <span className="section-subtitle">
+                  پیشنهاد قهوه خورها ...{" "}
+                </span>
               </div>
-              <div class="flex gap-x-3 md:gap-x-[18px] lg:gap-x-[20px]">
-                <div class="swiper-button-prev-custom flex-center w-9 h-9 md:w-10 md:h10 bg-white text-zinc-700 shadow-normal rounded-full hover:bg-gray-300 dark:hover:text-zinc-700 transition-all cursor-pointer">
-                  <svg class="w-5 h-5 md:w-[26px] md:h-[26px] rotate-180">
+              <div className="flex gap-x-3 md:gap-x-[18px] lg:gap-x-[20px]">
+                <div className="swiper-button-prev-custom flex-center w-9 h-9 md:w-10 md:h10 bg-white text-zinc-700 shadow-normal rounded-full hover:bg-gray-300 dark:hover:text-zinc-700 transition-all cursor-pointer">
+                  <svg className="w-5 h-5 md:w-[26px] md:h-[26px] rotate-180">
                     <use href="#chevron-left-mini"></use>
                   </svg>
                 </div>
-                <div class="swiper-button-next-custom flex-center w-9 h-9 md:w-10 md:h10 bg-white text-zinc-700 shadow-normal rounded-full hover:bg-gray-300 dark:hover:text-zinc-700 transition-all cursor-pointer">
-                  <svg class="w-5 h-5 md:w-[26px] md:h-[26px]">
+                <div className="swiper-button-next-custom flex-center w-9 h-9 md:w-10 md:h10 bg-white text-zinc-700 shadow-normal rounded-full hover:bg-gray-300 dark:hover:text-zinc-700 transition-all cursor-pointer">
+                  <svg className="w-5 h-5 md:w-[26px] md:h-[26px]">
                     <use href="#chevron-left-mini"></use>
                   </svg>
                 </div>
@@ -168,61 +184,62 @@ export default function Home() {
           </div>
         </section>
 
-        <section class="coffee-club mb-8 md:mb-20 ">
-          <div class="container">
-            <div class="flex items-center flex-wrap lg:flex-nowrap md:gap-x-3 xl:gap-x-24 gap-y-9 lg:h-36 py-8 lg:py-0 px-3 lg:px-5 xl:px-11 text-white bg-gradient-to-r from-emerald-500 to-emerald-600 rounded-2xl">
-              <div class="flex items-center md:shrink-0 gap-x-3 lg:gap-x-4 xl:gap-x-6 ">
+        <section className="coffee-club mb-8 md:mb-20 ">
+          <div className="container">
+            <div className="flex items-center flex-wrap lg:flex-nowrap md:gap-x-3 xl:gap-x-24 gap-y-9 lg:h-36 py-8 lg:py-0 px-3 lg:px-5 xl:px-11 text-white bg-gradient-to-r from-emerald-500 to-emerald-600 rounded-2xl">
+              <div className="flex items-center md:shrink-0 gap-x-3 lg:gap-x-4 xl:gap-x-6 ">
                 <Image
                   src="/images/club/diamond.png"
                   width={87}
                   height={77.5}
                   className="w-87 md:w-[110px]"
+                  alt=""
                 />
                 <div>
-                  <h4 class="font-MorabbaBold text-2xl md:text-5xl mb-2">
+                  <h4 className="font-MorabbaBold text-2xl md:text-5xl mb-2">
                     کافی کلاب
                   </h4>
-                  <p class="font-MorabbaLight text-lg md:text-2xl">
+                  <p className="font-MorabbaLight text-lg md:text-2xl">
                     میدونستی میتونی با امتیازهات قهوه بگیری ؟
                   </p>
                 </div>
               </div>
 
-              <div class="flex justify-between w-full">
-                <div class="flex items-center gap-x-2 lg:gap-x-3 xl:gap-x-5">
-                  <div class="w-[72px] h-[72px] md:w-[98px] md:h-[98px] text-center text-emerald-600 bg-white py-1.5 md:pt-5 md:pb-1 rounded-2xl">
-                    <svg class="w-10 h-10 md:w-12 md:h-12 mb-1 md:mb-1.5 mx-auto">
+              <div className="flex justify-between w-full">
+                <div className="flex items-center gap-x-2 lg:gap-x-3 xl:gap-x-5">
+                  <div className="w-[72px] h-[72px] md:w-[98px] md:h-[98px] text-center text-emerald-600 bg-white py-1.5 md:pt-5 md:pb-1 rounded-2xl">
+                    <svg className="w-10 h-10 md:w-12 md:h-12 mb-1 md:mb-1.5 mx-auto">
                       <use href="#activity"></use>
                     </svg>
-                    <span class="text-xs md:text-sm">چرخ و بخت</span>
+                    <span className="text-xs md:text-sm">چرخ و بخت</span>
                   </div>
 
-                  <div class="w-[72px] h-[72px] md:w-[98px] md:h-[98px] text-center text-emerald-600 bg-white py-1.5 md:pt-5 md:pb-1 rounded-2xl">
-                    <svg class="w-10 h-10 md:w-12 md:h-12 mb-1 md:mb-1.5 mx-auto">
+                  <div className="w-[72px] h-[72px] md:w-[98px] md:h-[98px] text-center text-emerald-600 bg-white py-1.5 md:pt-5 md:pb-1 rounded-2xl">
+                    <svg className="w-10 h-10 md:w-12 md:h-12 mb-1 md:mb-1.5 mx-auto">
                       <use href="#discovery"></use>
                     </svg>
-                    <span class="text-xs md:text-sm">ماموریت ها</span>
+                    <span className="text-xs md:text-sm">ماموریت ها</span>
                   </div>
 
-                  <div class="w-[72px] h-[72px] md:w-[98px] md:h-[98px] text-center text-emerald-600 bg-white py-1.5 md:pt-5 md:pb-1 rounded-2xl">
-                    <svg class="w-10 h-10 md:w-12 md:h-12 mb-1 md:mb-1.5 mx-auto">
+                  <div className="w-[72px] h-[72px] md:w-[98px] md:h-[98px] text-center text-emerald-600 bg-white py-1.5 md:pt-5 md:pb-1 rounded-2xl">
+                    <svg className="w-10 h-10 md:w-12 md:h-12 mb-1 md:mb-1.5 mx-auto">
                       <use href="#ticket-star"></use>
                     </svg>
-                    <span class="text-xs md:text-sm">جایزه ها</span>
+                    <span className="text-xs md:text-sm">جایزه ها</span>
                   </div>
                 </div>
 
-                <div class="flex flex-col">
-                  <span class="md:mb-1 font-DanaDemibold text-2xl md:text-3xl">
+                <div className="flex flex-col">
+                  <span className="md:mb-1 font-DanaDemibold text-2xl md:text-3xl">
                     542
                   </span>
-                  <span class="text-xs md:text-sm">امتیــاز شما</span>
+                  <span className="text-xs md:text-sm">امتیــاز شما</span>
                   <a
                     href="#"
-                    class="flex items-center justify-center w-[90px] h-[26px] md:w-[110px] md:h-8 mt-1 md:mt-2 font-DanaMedium text-xs md:text-sm rounded-full bg-gradient-to-r from-orange-200  to-orange-300"
+                    className="flex items-center justify-center w-[90px] h-[26px] md:w-[110px] md:h-8 mt-1 md:mt-2 font-DanaMedium text-xs md:text-sm rounded-full bg-gradient-to-r from-orange-200  to-orange-300"
                   >
                     <span>دریافت جایزه</span>
-                    <svg class="w-5 h-5 md:w-6 md:h-6">
+                    <svg className="w-5 h-5 md:w-6 md:h-6">
                       <use href="#chevron-left-mini"></use>
                     </svg>
                   </a>
@@ -233,18 +250,18 @@ export default function Home() {
         </section>
 
         {/* blogs */}
-        <section class="blogs mb-8 md:mb-28">
-          <div class="container">
+        <section className="blogs mb-8 md:mb-28">
+          <div className="container">
             {/* section Header */}
-            <div class="flex items-end justify-between mb-5 md:mb-12">
+            <div className="flex items-end justify-between mb-5 md:mb-12">
               <div>
-                <h2 class="section-title">مطالب خواندنی</h2>
+                <h2 className="section-title">مطالب خواندنی</h2>
               </div>
 
-              <a href="#" class="section-link">
-                <span class="hidden md:inline-block">مشاهده همه مطالب</span>
-                <span class="inline-block md:hidden">مشاهده همه</span>
-                <svg class="w-5 h-5">
+              <a href="#" className="section-link">
+                <span className="hidden md:inline-block">مشاهده همه مطالب</span>
+                <span className="inline-block md:hidden">مشاهده همه</span>
+                <svg className="w-5 h-5">
                   <use href="#chevron-left-mini"></use>
                 </svg>
               </a>
@@ -256,27 +273,29 @@ export default function Home() {
         </section>
 
         {/* contact us */}
-        <section class="contact-us mb-16 md:mb-28 ">
-          <div class="container">
-            <div class="flex flex-col md:flex-row items-center md:items-start gap-y-8 md:gap-x-5">
-              <img
-                src="images/contact.png"
-                class="max-w-[296px] w-full shrink-0"
+        <section className="contact-us mb-16 md:mb-28 ">
+          <div className="container">
+            <div className="flex flex-col md:flex-row items-center md:items-start gap-y-8 md:gap-x-5">
+              <Image
+                width={296}
+                height={304.88}
+                src="/images/contact.png"
+                className="max-w-[296px] w-full shrink-0"
                 alt=""
               />
-              <div class="text-zinc-700 dark:text-white flex flex-col items-center md:items-start">
-                <h3 class="font-MorabbaMedium text-2xl md:text-5xl mb-0.5 md:mb1.5">
+              <div className="text-zinc-700 dark:text-white flex flex-col items-center md:items-start">
+                <h3 className="font-MorabbaMedium text-2xl md:text-5xl mb-0.5 md:mb1.5">
                   یکی از بهترین قهوه ها !
                 </h3>
-                <span class="font-MorabbaLight text-lg md:text-3xl/[48px]">
+                <span className="font-MorabbaLight text-lg md:text-3xl/[48px]">
                   کیفیت قهوه را از ما بخواهید ...
                 </span>
-                <div class="flex gap-x-2.5 my-5 md:my-6">
-                  <span class="inline-block w-1 h-1 bg-zinc-700 dark:bg-gray-400 rounded-full"></span>
-                  <span class="inline-block w-1 h-1 bg-zinc-700 dark:bg-gray-400 rounded-full"></span>
-                  <span class="inline-block w-1 h-1 bg-zinc-700 dark:bg-gray-400 rounded-full"></span>
+                <div className="flex gap-x-2.5 my-5 md:my-6">
+                  <span className="inline-block w-1 h-1 bg-zinc-700 dark:bg-gray-400 rounded-full"></span>
+                  <span className="inline-block w-1 h-1 bg-zinc-700 dark:bg-gray-400 rounded-full"></span>
+                  <span className="inline-block w-1 h-1 bg-zinc-700 dark:bg-gray-400 rounded-full"></span>
                 </div>
-                <p class="text-lg md:text-2xl text-center md:text-justify">
+                <p className="text-lg md:text-2xl text-center md:text-justify">
                   فضای گرم و دنج ما را احساس کنید، جایی که همه می توانند قهوه
                   معطری پیدا کنند و دسرهای خوشمزه ما را که کاملاً با قهوه داغ
                   همراه شده است، امتحان کنند. فضای داخلی شیک و کارکنان خوش
@@ -284,10 +303,10 @@ export default function Home() {
                 </p>
                 <a
                   href="#"
-                  class="inline-flex items-center justify-center gap-x-2 mt-5 md:mt-6 text-xl tracking-tightest px-6 h-[50px] md:h-[60px] border md:border-2 border-orange-300 rounded-full text-orange-300"
+                  className="inline-flex items-center justify-center gap-x-2 mt-5 md:mt-6 text-xl tracking-tightest px-6 h-[50px] md:h-[60px] border md:border-2 border-orange-300 rounded-full text-orange-300"
                 >
                   <span>ثبت سفارش تلفنی</span>
-                  <svg class="w-5 h-5 md:w-8 md:h-8">
+                  <svg className="w-5 h-5 md:w-8 md:h-8">
                     <use href="#phone"></use>
                   </svg>
                 </a>
@@ -297,11 +316,11 @@ export default function Home() {
         </section>
 
         {/* services */}
-        <section class="services mb-12 lg:mb-36">
-          <div class="container">
-            <div class="flex items-center justify-between flex-wrap gap-y-11 child:w-1/2 lg:child:w-auto text-zinc-700 dark:text-white">
+        <section className="services mb-12 lg:mb-36">
+          <div className="container">
+            <div className="flex items-center justify-between flex-wrap gap-y-11 child:w-1/2 lg:child:w-auto text-zinc-700 dark:text-white">
               {/* box */}
-              <div class="flex items-center flex-col sm:flex-row gap-x-4 gap-y-5 text-center lg:text-right">
+              <div className="flex items-center flex-col sm:flex-row gap-x-4 gap-y-5 text-center lg:text-right">
                 {/* svg */}
                 <svg
                   className="dark:hidden"
@@ -311,46 +330,46 @@ export default function Home() {
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
                 >
-                  <g clip-path="url(#clip0_862_573)">
+                  <g clipPath="url(#clip0_862_573)">
                     <path
-                      fill-rule="evenodd"
-                      clip-rule="evenodd"
+                      fillRule="evenodd"
+                      clipRule="evenodd"
                       d="M55.2975 53.8429C57.7465 53.8429 60.0952 52.8716 61.8269 51.1427C63.5585 49.4139 64.5314 47.069 64.5314 44.6241C64.5314 42.1791 63.5585 39.8343 61.8269 38.1054C60.0952 36.3765 57.7465 35.4053 55.2975 35.4053V53.8429Z"
                       fill="#FDBA74"
                     />
                     <path
-                      fill-rule="evenodd"
-                      clip-rule="evenodd"
+                      fillRule="evenodd"
+                      clipRule="evenodd"
                       d="M56.7643 52.2348V37.0095C58.5368 37.3503 60.1351 38.2968 61.2845 39.6863C62.4339 41.0759 63.0626 42.8218 63.0626 44.624C63.0626 46.4261 62.4339 48.172 61.2845 49.5616C60.1351 50.9512 58.5368 51.8977 56.7643 52.2385V52.2348ZM57.5032 8.47917C54.8257 5.79116 51.6424 3.65805 48.1364 2.20247C44.6304 0.74689 40.8708 -0.00244141 37.0737 -0.00244141C33.2766 -0.00244141 29.517 0.74689 26.0109 2.20247C22.5049 3.65805 19.3217 5.79116 16.6442 8.47917C14.5925 10.523 12.8568 12.8603 11.4941 15.4142C10.6315 17.7652 13.414 18.3393 14.0891 16.7768C16.797 11.649 21.1468 7.57426 26.4449 5.20256C31.7429 2.83086 37.6839 2.29884 43.3201 3.69139C48.9564 5.08393 53.9631 8.3208 57.5418 12.8857C61.1204 17.4505 63.0647 23.0804 63.0646 28.8772V37.282C62.0669 36.2255 60.8634 35.3839 59.5281 34.8087C58.1927 34.2335 56.7537 33.9369 55.2993 33.9371C54.9098 33.9371 54.5363 34.0916 54.2609 34.3666C53.9855 34.6416 53.8307 35.0145 53.8307 35.4034V53.8428C53.8307 54.0353 53.8687 54.226 53.9425 54.4039C54.0163 54.5817 54.1245 54.7434 54.2609 54.8795C54.3972 55.0157 54.5591 55.1237 54.7373 55.1974C54.9155 55.2711 55.1065 55.309 55.2993 55.309C58.1082 55.3051 60.8031 54.2 62.8038 52.2318C64.8045 50.2635 65.951 47.5896 65.9963 44.7857C65.9963 44.7675 65.9963 39.4647 65.9963 28.8772C66.0019 25.0858 65.2542 21.331 63.7967 17.83C62.3392 14.3291 60.2007 11.1514 57.505 8.48099L57.5032 8.47917Z"
                       fill="#3F3F46"
                     />
                     <path
-                      fill-rule="evenodd"
-                      clip-rule="evenodd"
+                      fillRule="evenodd"
+                      clipRule="evenodd"
                       d="M63.3157 53.6885C62.9882 53.6884 62.6707 53.8017 62.4174 54.009C62.1641 54.2164 61.9907 54.5051 61.9267 54.8258C61.8627 55.1465 61.9121 55.4795 62.0664 55.768C62.2207 56.0564 62.4705 56.2825 62.7731 56.4078C63.0757 56.533 63.4124 56.5496 63.7259 56.4548C64.0394 56.3599 64.3102 56.1595 64.4923 55.8876C64.6743 55.6158 64.7563 55.2893 64.7243 54.9638C64.6923 54.6383 64.5482 54.334 64.3166 54.1027C64.0503 53.8389 63.6909 53.6902 63.3157 53.6885Z"
                       fill="#3F3F46"
                     />
                     <path
-                      fill-rule="evenodd"
-                      clip-rule="evenodd"
+                      fillRule="evenodd"
+                      clipRule="evenodd"
                       d="M42.1183 67.7146L44.202 67.2731L44.6442 69.3534L42.5605 69.7949L42.1183 67.7146ZM62.5205 58.3014C62.1826 58.109 61.782 58.0584 61.4067 58.1606C61.0314 58.2627 60.712 58.5094 60.5187 58.8464C59.1194 61.2737 57.2478 63.3968 55.0141 65.0908C52.7804 66.7848 50.2297 68.0155 47.5123 68.7102L46.7735 65.2382C46.7334 65.0498 46.6566 64.8711 46.5475 64.7124C46.4383 64.5537 46.2988 64.4179 46.1371 64.313C45.9754 64.208 45.7945 64.1359 45.6049 64.1008C45.4153 64.0656 45.2205 64.0681 45.0319 64.1081L40.0764 65.1601C39.6957 65.2411 39.3628 65.4699 39.1509 65.7959C38.939 66.1219 38.8654 66.5186 38.9463 66.8988L40 71.8461C40.04 72.0345 40.1168 72.2132 40.226 72.3719C40.3352 72.5307 40.4746 72.6664 40.6363 72.7713C40.7981 72.8763 40.9789 72.9484 41.1686 72.9835C41.3582 73.0187 41.5529 73.0162 41.7416 72.9762L46.697 71.9243C50.1009 71.2776 53.3249 69.9056 56.1493 67.9017C58.9736 65.8978 61.3317 63.3093 63.0628 60.3127C63.1604 60.1453 63.2237 59.9602 63.2493 59.7683C63.2748 59.5763 63.262 59.3812 63.2115 59.1942C63.1611 59.0072 63.0741 58.832 62.9555 58.6787C62.8369 58.5255 62.689 58.3973 62.5205 58.3014Z"
                       fill="#3F3F46"
                     />
                     <path
-                      fill-rule="evenodd"
-                      clip-rule="evenodd"
+                      fillRule="evenodd"
+                      clipRule="evenodd"
                       d="M4.98453 55.7978C3.66255 55.7978 2.39472 55.2735 1.45994 54.3402C0.525155 53.407 0 52.1412 0 50.8214V24.7293C0 24.0758 0.128929 23.4287 0.379425 22.8249C0.629921 22.2212 0.997079 21.6726 1.45994 21.2105C1.92279 20.7484 2.47228 20.3818 3.07703 20.1317C3.68179 19.8816 4.32995 19.7529 4.98453 19.7529H40.8881C41.5427 19.7529 42.1908 19.8816 42.7956 20.1317C43.4003 20.3818 43.9498 20.7484 44.4127 21.2105C44.8755 21.6726 45.2427 22.2212 45.4932 22.8249C45.7437 23.4287 45.8726 24.0758 45.8726 24.7293V57.5275C45.8749 58.1836 45.673 58.8243 45.2948 59.3609C44.9166 59.8975 44.3808 60.3036 43.7614 60.5231C43.142 60.7425 42.4696 60.7644 41.8372 60.5858C41.2048 60.4072 40.6436 60.0369 40.2311 59.526L37.2029 55.8014L4.98453 55.7978ZM4.98453 22.4655C4.68654 22.465 4.39138 22.5233 4.11595 22.6368C3.84052 22.7504 3.59024 22.9171 3.37945 23.1274C3.16865 23.3377 3.00147 23.5874 2.88749 23.8623C2.7735 24.1372 2.71496 24.4318 2.7152 24.7293V50.8232C2.7152 51.4231 2.9539 51.9985 3.3788 52.4227C3.8037 52.8469 4.37999 53.0852 4.98089 53.0852H38.5041L42.3476 57.8091C42.4067 57.8814 42.4867 57.9338 42.5767 57.9589C42.6668 57.9841 42.7624 57.9808 42.8505 57.9495C42.9386 57.9183 43.0149 57.8606 43.0688 57.7844C43.1228 57.7082 43.1518 57.6172 43.152 57.5238V24.7293C43.152 24.1294 42.9133 23.5541 42.4884 23.1299C42.0635 22.7057 41.4872 22.4673 40.8863 22.4673L4.98453 22.4655Z"
                       fill="#0D9488"
                     />
                     <path
-                      fill-rule="evenodd"
-                      clip-rule="evenodd"
+                      fillRule="evenodd"
+                      clipRule="evenodd"
                       d="M31.2867 36.3644H40.4259V38.7373L35.6342 50.5651H32.6806L37.3321 39.0425H31.2867V36.3644ZM27.6852 36.1119V38.7082H26.1693V41.1228H23.3558V38.7082H16.6643V36.1101L21.5378 26.6369H24.5296L19.6761 36.1101H23.3558V32.7434H26.1656V36.1119H27.6852ZM5.69066 41.121V39.0316L10.5223 34.0407C11.3909 33.3231 11.9664 32.313 12.1402 31.2009C12.1552 30.9554 12.118 30.7094 12.031 30.4793C11.9439 30.2491 11.8091 30.04 11.6353 29.8656C11.4615 29.6912 11.2527 29.5556 11.0226 29.4675C10.7925 29.3795 10.5463 29.3412 10.3003 29.355C9.78397 29.3623 9.28187 29.5251 8.85975 29.822C8.43763 30.119 8.11514 30.5362 7.93451 31.0192L5.58875 29.6402C5.98057 28.7331 6.63421 27.9632 7.46625 27.4286C8.2983 26.894 9.27101 26.619 10.2603 26.6387C10.8652 26.6062 11.4703 26.6978 12.0384 26.9079C12.6064 27.118 13.1253 27.4422 13.5629 27.8604C14.0006 28.2785 14.3477 28.7819 14.5828 29.3392C14.8179 29.8966 14.9361 30.4962 14.93 31.101C14.8624 31.974 14.6221 32.825 14.2229 33.6047C13.8236 34.3843 13.2735 35.0772 12.6042 35.6431L9.83442 38.4266H15.152V41.1246L5.69066 41.121Z"
                       fill="#3F3F46"
                     />
                     <path
-                      fill-rule="evenodd"
-                      clip-rule="evenodd"
+                      fillRule="evenodd"
+                      clipRule="evenodd"
                       d="M34.3803 27.1387L21.7579 50.5654H22.9809L35.5978 27.1405L34.3803 27.1387Z"
                       fill="#EDB56A"
                     />
@@ -369,46 +388,46 @@ export default function Home() {
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
                 >
-                  <g clip-path="url(#clip0_1_845)">
+                  <g clipPath="url(#clip0_1_845)">
                     <path
-                      fill-rule="evenodd"
-                      clip-rule="evenodd"
+                      fillRule="evenodd"
+                      clipRule="evenodd"
                       d="M55.2976 53.8429C57.7466 53.8429 60.0952 52.8716 61.8269 51.1427C63.5586 49.4139 64.5315 47.069 64.5315 44.6241C64.5315 42.1791 63.5586 39.8343 61.8269 38.1054C60.0952 36.3765 57.7466 35.4053 55.2976 35.4053V53.8429Z"
                       fill="#FDBA74"
                     />
                     <path
-                      fill-rule="evenodd"
-                      clip-rule="evenodd"
+                      fillRule="evenodd"
+                      clipRule="evenodd"
                       d="M56.7644 52.235V37.0096C58.5369 37.3504 60.1352 38.2969 61.2846 39.6865C62.434 41.0761 63.0627 42.8219 63.0627 44.6241C63.0627 46.4263 62.434 48.1721 61.2846 49.5617C60.1352 50.9513 58.5369 51.8978 56.7644 52.2386V52.235ZM57.5032 8.47929C54.8258 5.79129 51.6425 3.65817 48.1365 2.20259C44.6305 0.747012 40.8708 -0.00231934 37.0737 -0.00231934C33.2767 -0.00231934 29.517 0.747012 26.011 2.20259C22.505 3.65817 19.3217 5.79129 16.6443 8.47929C14.5925 10.5231 12.8568 12.8604 11.4941 15.4143C10.6315 17.7653 13.414 18.3394 14.0892 16.7769C16.797 11.6491 21.1469 7.57438 26.4449 5.20268C31.743 2.83098 37.684 2.29897 43.3202 3.69151C48.9564 5.08405 53.9632 8.32092 57.5418 12.8858C61.1205 17.4506 63.0648 23.0805 63.0646 28.8773V37.2821C62.067 36.2257 60.8635 35.384 59.5281 34.8088C58.1928 34.2336 56.7537 33.937 55.2994 33.9373C54.9099 33.9373 54.5364 34.0917 54.2609 34.3667C53.9855 34.6417 53.8308 35.0146 53.8308 35.4035V53.8429C53.8308 54.0354 53.8688 54.2261 53.9426 54.404C54.0164 54.5819 54.1246 54.7435 54.2609 54.8797C54.3973 55.0158 54.5592 55.1238 54.7374 55.1975C54.9156 55.2712 55.1065 55.3091 55.2994 55.3091C58.1082 55.3052 60.8032 54.2001 62.8039 52.2319C64.8046 50.2636 65.9511 47.5897 65.9964 44.7858C65.9964 44.7676 65.9964 39.4648 65.9964 28.8773C66.0019 25.0859 65.2543 21.3311 63.7968 17.8302C62.3392 14.3292 60.2007 11.1515 57.505 8.48111L57.5032 8.47929Z"
                       fill="white"
                     />
                     <path
-                      fill-rule="evenodd"
-                      clip-rule="evenodd"
+                      fillRule="evenodd"
+                      clipRule="evenodd"
                       d="M63.3157 53.6885C62.9882 53.6884 62.6707 53.8017 62.4174 54.009C62.1641 54.2164 61.9907 54.5051 61.9267 54.8258C61.8627 55.1465 61.9121 55.4795 62.0664 55.768C62.2207 56.0564 62.4705 56.2825 62.7731 56.4078C63.0757 56.533 63.4124 56.5496 63.7259 56.4548C64.0394 56.3599 64.3102 56.1595 64.4923 55.8876C64.6743 55.6158 64.7563 55.2893 64.7243 54.9638C64.6923 54.6383 64.5482 54.334 64.3166 54.1027C64.0503 53.8389 63.6909 53.6902 63.3157 53.6885Z"
                       fill="white"
                     />
                     <path
-                      fill-rule="evenodd"
-                      clip-rule="evenodd"
+                      fillRule="evenodd"
+                      clipRule="evenodd"
                       d="M42.1184 67.7147L44.2021 67.2732L44.6443 69.3535L42.5606 69.795L42.1184 67.7147ZM62.5206 58.3015C62.1826 58.1091 61.782 58.0585 61.4067 58.1607C61.0314 58.2629 60.7121 58.5095 60.5187 58.8466C59.1195 61.2738 57.2479 63.3969 55.0142 65.091C52.7805 66.785 50.2298 68.0156 47.5124 68.7103L46.7735 65.2383C46.7335 65.0499 46.6567 64.8713 46.5475 64.7125C46.4383 64.5538 46.2989 64.4181 46.1372 64.3131C45.9755 64.2082 45.7946 64.1361 45.605 64.1009C45.4153 64.0657 45.2206 64.0682 45.0319 64.1082L40.0765 65.1602C39.6958 65.2413 39.3629 65.47 39.151 65.796C38.939 66.1221 38.8655 66.5187 38.9464 66.8989L40.0001 71.8463C40.0401 72.0346 40.1169 72.2133 40.2261 72.3721C40.3352 72.5308 40.4747 72.6665 40.6364 72.7715C40.7981 72.8764 40.979 72.9485 41.1686 72.9837C41.3583 73.0188 41.553 73.0163 41.7417 72.9764L46.6971 71.9244C50.1009 71.2778 53.325 69.9057 56.1493 67.9018C58.9737 65.8979 61.3318 63.3094 63.0629 60.3128C63.1604 60.1454 63.2238 59.9604 63.2493 59.7684C63.2748 59.5764 63.262 59.3813 63.2116 59.1943C63.1612 59.0073 63.0742 58.8321 62.9555 58.6789C62.8369 58.5256 62.6891 58.3974 62.5206 58.3015Z"
                       fill="white"
                     />
                     <path
-                      fill-rule="evenodd"
-                      clip-rule="evenodd"
+                      fillRule="evenodd"
+                      clipRule="evenodd"
                       d="M4.98453 55.7978C3.66255 55.7978 2.39472 55.2735 1.45994 54.3402C0.525155 53.407 0 52.1412 0 50.8214V24.7293C0 24.0758 0.128929 23.4287 0.379425 22.8249C0.629921 22.2212 0.997079 21.6726 1.45994 21.2105C1.92279 20.7484 2.47228 20.3818 3.07703 20.1317C3.68179 19.8816 4.32995 19.7529 4.98453 19.7529H40.8881C41.5427 19.7529 42.1908 19.8816 42.7956 20.1317C43.4003 20.3818 43.9498 20.7484 44.4127 21.2105C44.8755 21.6726 45.2427 22.2212 45.4932 22.8249C45.7437 23.4287 45.8726 24.0758 45.8726 24.7293V57.5275C45.8749 58.1836 45.673 58.8243 45.2948 59.3609C44.9166 59.8975 44.3808 60.3036 43.7614 60.5231C43.142 60.7425 42.4696 60.7644 41.8372 60.5858C41.2048 60.4072 40.6436 60.0369 40.2311 59.526L37.2029 55.8014L4.98453 55.7978ZM4.98453 22.4655C4.68654 22.465 4.39138 22.5233 4.11595 22.6368C3.84052 22.7504 3.59024 22.9171 3.37945 23.1274C3.16865 23.3377 3.00147 23.5874 2.88749 23.8623C2.7735 24.1372 2.71496 24.4318 2.7152 24.7293V50.8232C2.7152 51.4231 2.9539 51.9985 3.3788 52.4227C3.8037 52.8469 4.37999 53.0852 4.98089 53.0852H38.5041L42.3476 57.8091C42.4067 57.8814 42.4867 57.9338 42.5767 57.9589C42.6668 57.9841 42.7624 57.9808 42.8505 57.9495C42.9386 57.9183 43.0149 57.8606 43.0688 57.7844C43.1228 57.7082 43.1518 57.6172 43.152 57.5238V24.7293C43.152 24.1294 42.9133 23.5541 42.4884 23.1299C42.0635 22.7057 41.4872 22.4673 40.8863 22.4673L4.98453 22.4655Z"
                       fill="#10B981"
                     />
                     <path
-                      fill-rule="evenodd"
-                      clip-rule="evenodd"
+                      fillRule="evenodd"
+                      clipRule="evenodd"
                       d="M31.2865 36.3646H40.4258V38.7374L35.6341 50.5652H32.6805L37.332 39.0426H31.2865V36.3646ZM27.6851 36.112V38.7083H26.1692V41.1229H23.3557V38.7083H16.6641V36.1102L21.5377 26.637H24.5295L19.676 36.1102H23.3557V32.7435H26.1655V36.112H27.6851ZM5.69053 41.1211V39.0317L10.5222 34.0408C11.3908 33.3233 11.9663 32.3131 12.14 31.201C12.1551 30.9555 12.1178 30.7095 12.0308 30.4794C11.9438 30.2492 11.809 30.0401 11.6352 29.8657C11.4614 29.6913 11.2525 29.5557 11.0224 29.4677C10.7923 29.3797 10.5462 29.3413 10.3002 29.3551C9.78384 29.3624 9.28175 29.5252 8.85963 29.8221C8.4375 30.1191 8.11502 30.5364 7.93439 31.0193L5.58862 29.6403C5.98045 28.7332 6.63409 27.9633 7.46613 27.4287C8.29817 26.8941 9.27089 26.6191 10.2601 26.6389C10.865 26.6063 11.4702 26.6979 12.0383 26.908C12.6063 27.1181 13.1252 27.4423 13.5628 27.8605C14.0004 28.2787 14.3475 28.782 14.5827 29.3394C14.8178 29.8967 14.9359 30.4963 14.9298 31.1011C14.8623 31.9741 14.622 32.8251 14.2227 33.6048C13.8235 34.3845 13.2734 35.0773 12.6041 35.6433L9.8343 38.4267H15.1519V41.1248L5.69053 41.1211Z"
                       fill="white"
                     />
                     <path
-                      fill-rule="evenodd"
-                      clip-rule="evenodd"
+                      fillRule="evenodd"
+                      clipRule="evenodd"
                       d="M34.3804 27.1385L21.7581 50.5653H22.981L35.5979 27.1404L34.3804 27.1385Z"
                       fill="#EDB56A"
                     />
@@ -421,17 +440,17 @@ export default function Home() {
                 </svg>
 
                 <div>
-                  <h5 class="mb-1 md:mb-3.5 text-sm/6 md:text-lg font-DanaDemibold">
+                  <h5 className="mb-1 md:mb-3.5 text-sm/6 md:text-lg font-DanaDemibold">
                     پشتیبانی شبانه روزی
                   </h5>
-                  <span class="text-xs md:text-sm/6">
+                  <span className="text-xs md:text-sm/6">
                     7 روز هفته ، 24 ساعته
                   </span>
                 </div>
               </div>
 
               {/* box */}
-              <div class="flex items-center flex-col sm:flex-row gap-x-4 gap-y-5 text-center lg:text-right">
+              <div className="flex items-center flex-col sm:flex-row gap-x-4 gap-y-5 text-center lg:text-right">
                 {/* svg */}
                 <svg
                   className="dark:hidden"
@@ -441,10 +460,10 @@ export default function Home() {
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
                 >
-                  <g clip-path="url(#clip0_862_604)">
+                  <g clipPath="url(#clip0_862_604)">
                     <path
-                      fill-rule="evenodd"
-                      clip-rule="evenodd"
+                      fillRule="evenodd"
+                      clipRule="evenodd"
                       d="M59.5095 8.66211L92.4431 18.9995V35.1861L81.547 38.7482V23.3623L47.2621 12.3864L59.5095 8.66211Z"
                       fill="#FDBA74"
                     />
@@ -515,10 +534,10 @@ export default function Home() {
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
                 >
-                  <g clip-path="url(#clip0_1_876)">
+                  <g clipPath="url(#clip0_1_876)">
                     <path
-                      fill-rule="evenodd"
-                      clip-rule="evenodd"
+                      fillRule="evenodd"
+                      clipRule="evenodd"
                       d="M59.5096 8.66199L92.4432 18.9993V35.186L81.5471 38.7481V23.3622L47.2622 12.3863L59.5096 8.66199Z"
                       fill="#FDBA74"
                     />
@@ -583,17 +602,17 @@ export default function Home() {
                 </svg>
 
                 <div>
-                  <h5 class="mb-1 md:mb-3.5 text-sm/6 md:text-lg font-DanaDemibold">
+                  <h5 className="mb-1 md:mb-3.5 text-sm/6 md:text-lg font-DanaDemibold">
                     امکان تحویل اکسپرس
                   </h5>
-                  <span class="text-xs md:text-sm/6">
+                  <span className="text-xs md:text-sm/6">
                     ارسال بسته با سرعت باد
                   </span>
                 </div>
               </div>
 
               {/* box */}
-              <div class="flex items-center flex-col sm:flex-row gap-x-4 gap-y-5 text-center lg:text-right">
+              <div className="flex items-center flex-col sm:flex-row gap-x-4 gap-y-5 text-center lg:text-right">
                 {/* svg */}
                 <svg
                   className="dark:hidden"
@@ -646,17 +665,17 @@ export default function Home() {
                   />
                 </svg>
                 <div>
-                  <h5 class="mb-1 md:mb-3.5 text-sm/6 md:text-lg font-DanaDemibold">
+                  <h5 className="mb-1 md:mb-3.5 text-sm/6 md:text-lg font-DanaDemibold">
                     رست تخصصی
                   </h5>
-                  <span class="text-xs md:text-sm/6">
+                  <span className="text-xs md:text-sm/6">
                     تازه برشته شده و با کیفیت
                   </span>
                 </div>
               </div>
 
               {/* box */}
-              <div class="flex items-center flex-col sm:flex-row gap-x-4 gap-y-5 text-center lg:text-right">
+              <div className="flex items-center flex-col sm:flex-row gap-x-4 gap-y-5 text-center lg:text-right">
                 {/* svg */}
                 <svg
                   className="dark:hidden"
@@ -710,10 +729,10 @@ export default function Home() {
                 </svg>
 
                 <div>
-                  <h5 class="mb-1 md:mb-3.5 text-sm/6 md:text-lg font-DanaDemibold">
+                  <h5 className="mb-1 md:mb-3.5 text-sm/6 md:text-lg font-DanaDemibold">
                     اکسسوری قهوه
                   </h5>
-                  <span class="text-xs md:text-sm/6">
+                  <span className="text-xs md:text-sm/6">
                     وسایل و ادوات دم آوری
                   </span>
                 </div>

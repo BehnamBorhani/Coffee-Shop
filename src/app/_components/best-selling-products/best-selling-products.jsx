@@ -47,7 +47,7 @@ const BestSellingProducts = () => {
           disableOnInteraction: false,
         }}
         loop={true}
-        lazy={true}
+        lazy="true"
       >
         <SwiperSlide>
           <ProductCard />

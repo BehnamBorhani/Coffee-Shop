@@ -1,5 +1,6 @@
 "use client";
 import { useAppContext } from "@/contexts/app/app-context";
+import Image from "next/image";
 import React, { useEffect, useState } from "react";
 
 const Navbar = () => {
@@ -37,7 +38,12 @@ const Navbar = () => {
           <nav className="flex items-center gap-x-6 lg:gap-x-9 h-14">
             {/* logo */}
             <div className="shrink-0">
-              <img src="./images/app-logo.png" alt="Golden Coffe" />
+              <Image
+                src="/images/app-logo.png"
+                width={59}
+                height={56}
+                alt="Golden Coffee"
+              />
             </div>
             {/* menu */}
             <ul className="flex gap-x-5 lg:gap-x-9 text-xl text-gray-300 tracking-tightest h-full child:leading-[56px] ">
@@ -99,8 +105,10 @@ const Navbar = () => {
                   {/* cart Body */}
                   <div className="pb-1 border-b border-b-gray-300 dark:border-b-white/10 devide-y devide-gray-100 dark:devide-white/10 child:py-5">
                     <div className="flex gap-x-2.5">
-                      <img
-                        src="images/products/p1.png"
+                      <Image
+                        width={120}
+                        height={120}
+                        src="/images/products/p1.png"
                         className="w-30 h-30"
                         alt="products"
                       />
@@ -121,8 +129,10 @@ const Navbar = () => {
                     </div>
 
                     <div className="flex gap-x-2.5">
-                      <img
-                        src="images/products/p2.png"
+                      <Image
+                        width={120}
+                        height={120}
+                        src="/images/products/p2.png"
                         className="w-30 h-30"
                         alt="products"
                       />
@@ -143,8 +153,10 @@ const Navbar = () => {
                     </div>
 
                     <div className="flex gap-x-2.5">
-                      <img
-                        src="images/products/p2.png"
+                      <Image
+                        width={120}
+                        height={120}
+                        src="/images/products/p2.png"
                         className="w-30 h-30"
                         alt="products"
                       />
@@ -398,8 +410,10 @@ const Navbar = () => {
         {/* mobile cart Body */}
         <div className="child:pb-5 child:mb-5">
           <div className="flex gap-x-1 border-b border-b-gray-100 dark:border-b-white/10">
-            <img
-              src="images/products/p1.png"
+            <Image
+              width={120}
+              height={120}
+              src="/images/products/p1.png"
               className="w-[90px] h-[90px]"
               alt="products"
             />
@@ -420,8 +434,10 @@ const Navbar = () => {
           </div>
 
           <div className="flex gap-x-1 border-b border-b-gray-100 dark:border-b-white/10">
-            <img
-              src="images/products/p2.png"
+            <Image
+              width={120}
+              height={120}
+              src="/images/products/p2.png"
               className="w-[90px] h-[90px]"
               alt="products"
             />
@@ -442,8 +458,10 @@ const Navbar = () => {
           </div>
 
           <div className="flex gap-x-1 border-b border-b-gray-100 dark:border-b-white/10">
-            <img
-              src="images/products/p2.png"
+            <Image
+              width={120}
+              height={120}
+              src="/images/products/p2.png"
               className="w-[90px] h-[90px]"
               alt="products"
             />
