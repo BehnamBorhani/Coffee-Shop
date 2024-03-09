@@ -248,7 +248,21 @@ const SVGSymbols = () => {
       >
         <path
           d="M50 0C69 0 81 22 100 22L0 22C18.75 22 31 0 50 0Z"
-          fill="#F3F4F6"
+          fill="currentColor"
+        />
+      </symbol>
+
+      <symbol
+        id="curve-footer"
+        width="100"
+        height="22"
+        viewBox="0 0 100 22"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M50 22C31 22 19 -3.26655e-06 1.9233e-06 -3.02023e-06L100 -3.8147e-06C81.25 -5.45387e-06 69 22 50 22Z"
+          fill="currentColor"
         />
       </symbol>
 
