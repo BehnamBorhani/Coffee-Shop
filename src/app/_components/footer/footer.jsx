@@ -3,29 +3,29 @@ import React from "react";
 const Footer = () => {
   return (
     <footer className="relative bg-zinc-700 py-8 md:pb-11 md:pt-[62px] ">
-      <svg className="absolute -top-[1px] right-0 left-0 mx-auto hidden md:inline-block text-gray-100 dark:text-zinc-800 w-[100px] h-[22px]">
+      <svg className="absolute -top-[1px] left-0 right-0 mx-auto hidden h-[22px] w-[100px] text-gray-100 dark:text-zinc-800 md:inline-block">
         <use href="#curve-footer"></use>
       </svg>
-      <div className="absolute -top-[1px] right-0 left-0 mx-auto -translate-y-2/4 hidden md:flex items-center justify-center w-[30px] h-[30px] border-2 border-orange-300 rounded-full">
-        <svg className="size-5 text-zinc-700 dark:text-white rotate-180">
+      <div className="absolute -top-[1px] left-0 right-0 mx-auto hidden h-[30px] w-[30px] -translate-y-2/4 items-center justify-center rounded-full border-2 border-orange-300 md:flex">
+        <svg className="size-5 rotate-180 text-zinc-700 dark:text-white">
           <use href="#chevron-down"></use>
         </svg>
       </div>
 
-      <div className="px-4 md:px-0 sm:w-[94%] lg:w-[90%] mx-auto text-gray-300">
-        <div className="flex justify-between flex-wrap ">
+      <div className="mx-auto px-4 text-gray-300 sm:w-[94%] md:px-0 lg:w-[90%]">
+        <div className="flex flex-wrap justify-between ">
           {/* footer - right */}
           <div>
-            <div className="flex gap-x-5 text-gray-300 mb-6 md:mb-4.5">
-              <svg className="w-[57px] h-[54px]">
+            <div className="mb-6 flex gap-x-5 text-gray-300 md:mb-4.5">
+              <svg className="h-[54px] w-[57px]">
                 <use href="#logo"></use>
               </svg>
-              <svg className="w-[138px] h-[54px]">
+              <svg className="h-[54px] w-[138px]">
                 <use href="#logo-type"></use>
               </svg>
             </div>
 
-            <p className="xl:max-w-[570px] text-lg md:text-xl/[48px] ">
+            <p className="text-lg md:text-xl/[48px] xl:max-w-[570px] ">
               ما برآنیم تا با پیشرو بودن در فرآیند تولید، نوع و کیفیت محصول،
               خدمات و توزیع، الگویی برای تولیدکنندگان ایرانی باشیم و به مرجع
               فرهنگ قهوه در ایران تبدیل شویم. می‌پنداریم که نظر مردم ایران و
@@ -36,81 +36,81 @@ const Footer = () => {
 
           {/* foter - center */}
           <div className="mt-10 md:mt-[26px]">
-            <h4 className="mb-6 md:mb-7 font-DanaDemibold text-2xl text-white">
+            <h4 className="mb-6 font-DanaDemibold text-2xl text-white md:mb-7">
               دسترسی سریع
             </h4>
 
-            <div className="grid grid-cols-2 gap-x-10 md:gap-x-0 gap-y-2.5 mb-6 md:mb-7">
+            <div className="mb-6 grid grid-cols-2 gap-x-10 gap-y-2.5 md:mb-7 md:gap-x-0">
               <a
                 href="#"
-                className="flex items-center gap-x-2 md:gap-x-3 md:text-xl hover:text-orange-300 transition-all"
+                className="flex items-center gap-x-2 transition-all hover:text-orange-300 md:gap-x-3 md:text-xl"
               >
-                <span className="inline-block w-2 md:w-2.5 h-1 bg-current rounded-full"></span>
+                <span className="inline-block h-1 w-2 rounded-full bg-current md:w-2.5"></span>
                 <span>حریم خصوصی</span>
               </a>
               <a
                 href="#"
-                className="flex items-center gap-x-2 md:gap-x-3 md:text-xl hover:text-orange-300 transition-all"
+                className="flex items-center gap-x-2 transition-all hover:text-orange-300 md:gap-x-3 md:text-xl"
               >
-                <span className="inline-block w-2 md:w-2.5 h-1 bg-current rounded-full"></span>
+                <span className="inline-block h-1 w-2 rounded-full bg-current md:w-2.5"></span>
                 <span>پرسش های متداول</span>
               </a>
               <a
                 href="#"
-                className="flex items-center gap-x-2 md:gap-x-3 md:text-xl hover:text-orange-300 transition-all"
+                className="flex items-center gap-x-2 transition-all hover:text-orange-300 md:gap-x-3 md:text-xl"
               >
-                <span className="inline-block w-2 md:w-2.5 h-1 bg-current rounded-full"></span>
+                <span className="inline-block h-1 w-2 rounded-full bg-current md:w-2.5"></span>
                 <span>عودت کالا</span>
               </a>
               <a
                 href="#"
-                className="flex items-center gap-x-2 md:gap-x-3 md:text-xl hover:text-orange-300 transition-all"
+                className="flex items-center gap-x-2 transition-all hover:text-orange-300 md:gap-x-3 md:text-xl"
               >
-                <span className="inline-block w-2 md:w-2.5 h-1 bg-current rounded-full"></span>
+                <span className="inline-block h-1 w-2 rounded-full bg-current md:w-2.5"></span>
                 <span>فرصت های شغلی</span>
               </a>
               <a
                 href="#"
-                className="flex items-center gap-x-2 md:gap-x-3 md:text-xl hover:text-orange-300 transition-all"
+                className="flex items-center gap-x-2 transition-all hover:text-orange-300 md:gap-x-3 md:text-xl"
               >
-                <span className="inline-block w-2 md:w-2.5 h-1 bg-current rounded-full"></span>
+                <span className="inline-block h-1 w-2 rounded-full bg-current md:w-2.5"></span>
                 <span>شرایط استفاده</span>
               </a>
               <a
                 href="#"
-                className="flex items-center gap-x-2 md:gap-x-3 md:text-xl hover:text-orange-300 transition-all"
+                className="flex items-center gap-x-2 transition-all hover:text-orange-300 md:gap-x-3 md:text-xl"
               >
-                <span className="inline-block w-2 md:w-2.5 h-1 bg-current rounded-full"></span>
+                <span className="inline-block h-1 w-2 rounded-full bg-current md:w-2.5"></span>
                 <span>ضمانت نامه ها</span>
               </a>
               <a
                 href="#"
-                className="flex items-center gap-x-2 md:gap-x-3 md:text-xl hover:text-orange-300 transition-all"
+                className="flex items-center gap-x-2 transition-all hover:text-orange-300 md:gap-x-3 md:text-xl"
               >
-                <span className="inline-block w-2 md:w-2.5 h-1 bg-current rounded-full"></span>
+                <span className="inline-block h-1 w-2 rounded-full bg-current md:w-2.5"></span>
                 <span>ثبت سفارش</span>
               </a>
               <a
                 href="#"
-                className="flex items-center gap-x-2 md:gap-x-3 md:text-xl hover:text-orange-300 transition-all"
+                className="flex items-center gap-x-2 transition-all hover:text-orange-300 md:gap-x-3 md:text-xl"
               >
-                <span className="inline-block w-2 md:w-2.5 h-1 bg-current rounded-full"></span>
+                <span className="inline-block h-1 w-2 rounded-full bg-current md:w-2.5"></span>
                 <span>ارتباط با ما</span>
               </a>
             </div>
           </div>
 
           {/* footer - left */}
-          <div className="mt-10 md:mt26">
+          <div className="md:mt26 mt-10">
             {/* Address */}
-            <h4 className="mb-6 md:mb-7 font-DanaDemibold text-2xl text-white">
+            <h4 className="mb-6 font-DanaDemibold text-2xl text-white md:mb-7">
               در تماس باشیم
             </h4>
             <div>
               {/* email & Phone */}
-              <div className="text-xl mb-6 md:mb-10">
-                <span className="flex items-center gap-x-2 md:gap-x-3 mb-4 md:mb-5">
-                  <svg className="shrink-0 w-5 h-5 md:w-6 md:h-6">
+              <div className="mb-6 text-xl md:mb-10">
+                <span className="mb-4 flex items-center gap-x-2 md:mb-5 md:gap-x-3">
+                  <svg className="h-5 w-5 shrink-0 md:h-6 md:w-6">
                     <use href="#map-pin"></use>
                   </svg>
                   <span>
@@ -120,15 +120,15 @@ const Footer = () => {
                 <div className="flex flex-wrap gap-x-5 gap-y-4 font-DanaMedium">
                   <a
                     href="mailto:info@Coffee.com"
-                    className="flex items-center gap-x-2 md:gap-x-3 text-orange-300"
+                    className="flex items-center gap-x-2 text-orange-300 md:gap-x-3"
                   >
-                    <svg className="w-5 h-5 md:w-6 md:h-6">
+                    <svg className="h-5 w-5 md:h-6 md:w-6">
                       <use href="#envelop"></use>
                     </svg>
                     <span>info@Coffee.com</span>
                   </a>
                   <div className="flex items-center gap-x-2 md:gap-x-3">
-                    <svg className="w-5 h-5 md:w-6 md:h-6">
+                    <svg className="h-5 w-5 md:h-6 md:w-6">
                       <use href="#phone"></use>
                     </svg>
                     <span>0936-504-1466</span>
@@ -137,21 +137,21 @@ const Footer = () => {
                 </div>
               </div>
               {/* buttons */}
-              <div className="flex gap-x-1.5 md:gap-x-6 font-DanaMedium md:text-2xl ">
+              <div className="flex gap-x-1.5 font-DanaMedium md:gap-x-6 md:text-2xl ">
                 <a
                   href="#"
-                  className="flex items-center justify-center gap-x-2 flex-grow h-12 border border-orange-200 text-orange-200 rounded-xl"
+                  className="flex h-12 flex-grow items-center justify-center gap-x-2 rounded-xl border border-orange-200 text-orange-200"
                 >
-                  <svg className="w-[26px] h-[26px] md:w-[38px] md:h-[38px]">
+                  <svg className="h-[26px] w-[26px] md:h-[38px] md:w-[38px]">
                     <use href="#instagram"></use>
                   </svg>
                   <span className="ltr-text">@golden_coffee</span>
                 </a>
                 <a
                   href="#"
-                  className="flex items-center justify-center gap-x-2 flex-grow h-12 bg-gradient-to-r from-orange-200 to-orange-300 text-zinc-700 rounded-xl"
+                  className="flex h-12 flex-grow items-center justify-center gap-x-2 rounded-xl bg-gradient-to-r from-orange-200 to-orange-300 text-zinc-700"
                 >
-                  <svg className="w-[26px] h-[26px] md:w-[38px] md:h-[38px]">
+                  <svg className="h-[26px] w-[26px] md:h-[38px] md:w-[38px]">
                     <use href="#telegram"></use>
                   </svg>
                   <span className="ltr-text">@golden_coffee</span>
@@ -162,11 +162,11 @@ const Footer = () => {
         </div>
 
         {/* Copy rights */}
-        <div className="flex flex-wrap justify-between items-center gap-x-4 mt-10 md:mt-11 pt-10 md:pt-11 border-t border-white/10 font-DanaMedium text-xs/5 md:text-base ">
+        <div className="mt-10 flex flex-wrap items-center justify-between gap-x-4 border-t border-white/10 pt-10 font-DanaMedium text-xs/5 md:mt-11 md:pt-11 md:text-base ">
           <div className="flex items-center gap-x-2.5">
-            <div className=" flex-center w-[30px] h-[30px] border border-white/10 rounded-full flex-shrink-0">
-              <div className=" flex-center w-5 h-5 border border-white/20 rounded-full">
-                <div className="w-2.5 h-2.5 bg-gradient-to-t from-orange-200 to-orange-300 rounded-full"></div>
+            <div className=" flex-center h-[30px] w-[30px] flex-shrink-0 rounded-full border border-white/10">
+              <div className=" flex-center h-5 w-5 rounded-full border border-white/20">
+                <div className="h-2.5 w-2.5 rounded-full bg-gradient-to-t from-orange-200 to-orange-300"></div>
               </div>
             </div>
             <p>

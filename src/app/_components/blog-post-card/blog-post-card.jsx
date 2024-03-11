@@ -3,47 +3,47 @@ import React from "react";
 
 const BlogPostCard = () => {
   return (
-    <div className="group flex gap-x-2.5 sm:block p-2.5 md:pb-2 bg-white dark:bg-zinc-700 shadow-normal rounded-2xl">
-      <div className="relative w-[130px] h-[130px] sm:w-auto sm:h-auto sm:mb-4 rounded-2xl rounded-bl-4xl overflow-hidden shrink-0">
+    <div className="group flex gap-x-2.5 rounded-2xl bg-white p-2.5 shadow-normal dark:bg-zinc-700 sm:block md:pb-2">
+      <div className="relative h-[130px] w-[130px] shrink-0 overflow-hidden rounded-2xl rounded-bl-4xl sm:mb-4 sm:h-auto sm:w-auto">
         <Image
           width={285}
           height={189.32}
           src="/images/blogs/blog-1.png"
-          className="h-full sm:h-auto object-cover"
+          className="h-full object-cover sm:h-auto"
           alt=""
         />
-        <div className="hidden absolute inset-0 w-full h-full md:flex-center invisible opacity-0 group-hover:visible group-hover:opacity-100  bg-gradient-to-r from-orange-200/80 to-orange-300/80 transition-all delay-100">
-          <svg className="w-[138px] h-[54px] text-amber-900">
+        <div className="md:flex-center invisible absolute inset-0 hidden h-full w-full bg-gradient-to-r from-orange-200/80 to-orange-300/80  opacity-0 transition-all delay-100 group-hover:visible group-hover:opacity-100">
+          <svg className="h-[54px] w-[138px] text-amber-900">
             <use href="#logo-type"></use>
           </svg>
         </div>
       </div>
 
-      <div className=" w-full flex flex-col sm:flex-row justify-between items-start">
+      <div className=" flex w-full flex-col items-start justify-between sm:flex-row">
         <a
           href="#"
-          className="mt-2.5 sm:mt-0 ml-1.5 sm:ml-0 font-DanaMedium md:font-Dana text-sm/7 md:text-lg line-clamp-2 lg:max-w-[193px] text-zinc-700 dark:text-white"
+          className="ml-1.5 mt-2.5 line-clamp-2 font-DanaMedium text-sm/7 text-zinc-700 dark:text-white sm:ml-0 sm:mt-0 md:font-Dana md:text-lg lg:max-w-[193px]"
         >
           طرز تهیه قهوه دمی با دستگاه اروپرس
         </a>
-        <div className="hidden sm:flex gap-5">
-          <span className="hidden lg:block w-px h-[61px] bg-gray-100 dark:bg-white/10"></span>
-          <div className="flex flex-col ml-[12px ] lg:ml-[18px] text-teal-600 dark:text-emerald-500 text-sm text-left">
+        <div className="hidden gap-5 sm:flex">
+          <span className="hidden h-[61px] w-px bg-gray-100 dark:bg-white/10 lg:block"></span>
+          <div className="ml-[12px ] flex flex-col text-left text-sm text-teal-600 dark:text-emerald-500 lg:ml-[18px]">
             <span className="font-DanaDemibold md:text-lg lg:text-2xl">28</span>
             <span>مرداد</span>
             <span>1402</span>
           </div>
         </div>
-        <div className="flex items-end justify-between w-full pb-1.5 border-t border-t-gray-100 dark:border-t-white/10 pt-[18px] sm:hidden">
-          <span className="text-teal-600 dark:text-emerald-500 text-xs">
+        <div className="flex w-full items-end justify-between border-t border-t-gray-100 pb-1.5 pt-[18px] dark:border-t-white/10 sm:hidden">
+          <span className="text-xs text-teal-600 dark:text-emerald-500">
             28 مرداد 1402
           </span>
           <a
             href="#"
-            className="flex items-center gap-x-1 h-5 pr-2.5 pl-2 ml-1.5 text-xs font-DanaMedium bg-orange-200/20 text-orange-300 rounded-md"
+            className="ml-1.5 flex h-5 items-center gap-x-1 rounded-md bg-orange-200/20 pl-2 pr-2.5 font-DanaMedium text-xs text-orange-300"
           >
             <span>مطالعه</span>
-            <svg className="w-3.5 h-3.5 ">
+            <svg className="h-3.5 w-3.5 ">
               <use href="#arrow-left2"></use>
             </svg>
           </a>

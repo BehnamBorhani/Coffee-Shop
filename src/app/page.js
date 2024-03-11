@@ -21,7 +21,7 @@ export default function Home() {
         <section className="products pt-8 md:pt-24 lg:pt-48">
           <div className="container px-4 md:px-0">
             {/* section Header */}
-            <div className="flex items-end justify-between mb-5 md:mb-12">
+            <div className="mb-5 flex items-end justify-between md:mb-12">
               <div>
                 <h2 className="section-title">جدیدترین محصولات</h2>
                 <span className="section-subtitle">
@@ -34,14 +34,14 @@ export default function Home() {
                   مشاهده همه محصولات
                 </span>
                 <span className="inline-block md:hidden">مشاهده همه</span>
-                <svg className="w-5 h-5">
+                <svg className="h-5 w-5">
                   <use href="#chevron-left-mini"></use>
                 </svg>
               </Link>
             </div>
 
             {/* section Body */}
-            <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3.5 md:gap-5 ">
+            <div className="grid grid-cols-2 gap-3.5 sm:grid-cols-3 md:gap-5 lg:grid-cols-4 ">
               <ProductCard />
               <ProductCard />
               <ProductCard />
@@ -50,14 +50,14 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="category-banner mt-8 mb-10 md:my-20">
+        <section className="category-banner mb-10 mt-8 md:my-20">
           <div className="container">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-5 text-white">
+            <div className="grid grid-cols-1 gap-5 text-white md:grid-cols-2">
               <a
                 href="#"
-                className="category-banner_item1 flex flex-col pr-7 md:pr-12 justify-center rounded-2xl h-[142px] md:h-[248px]"
+                className="category-banner_item1 flex h-[142px] flex-col justify-center rounded-2xl pr-7 md:h-[248px] md:pr-12"
               >
-                <span className="font-DanaDemibold text-2xl/6 md:text-4xl/6 mb-4 md:mb-7">
+                <span className="mb-4 font-DanaDemibold text-2xl/6 md:mb-7 md:text-4xl/6">
                   انواع قهوه
                 </span>
                 <span className="md:font-DanaMedium md:text-xl/6">
@@ -66,9 +66,9 @@ export default function Home() {
               </a>
               <a
                 href="#"
-                className="category-banner_item2 flex flex-col pr-7 md:pr-12 justify-center rounded-2xl h-[142px] md:h-[248px]"
+                className="category-banner_item2 flex h-[142px] flex-col justify-center rounded-2xl pr-7 md:h-[248px] md:pr-12"
               >
-                <span className="font-DanaDemibold text-2xl/6 md:text-4xl/6 mb-4 md:mb-7">
+                <span className="mb-4 font-DanaDemibold text-2xl/6 md:mb-7 md:text-4xl/6">
                   پودرهای فوری
                 </span>
                 <span className="md:font-DanaMedium md:text-xl/6">
@@ -81,8 +81,8 @@ export default function Home() {
 
         <section className="products-categories mb-10 md:mb-20">
           <div className="container">
-            <div className="flex items-center justify-center flex-wrap gap-y-6 gap-x-[29px] md:gap-x-[65px] ">
-              <div className="w-25 md:w-50 text-center">
+            <div className="flex flex-wrap items-center justify-center gap-x-[29px] gap-y-6 md:gap-x-[65px] ">
+              <div className="w-25 text-center md:w-50">
                 <a href="#">
                   <Image
                     width={200}
@@ -91,12 +91,12 @@ export default function Home() {
                     loading="lazy"
                     alt=""
                   />
-                  <span className="inline-block mt-1.5 md:mt-2.5 font-DanaDemibold text-sm md:text-xl text-zinc-700 dark:text-white">
+                  <span className="mt-1.5 inline-block font-DanaDemibold text-sm text-zinc-700 dark:text-white md:mt-2.5 md:text-xl">
                     قهوه دمی و اسپرسو
                   </span>
                 </a>
               </div>
-              <div className="w-25 md:w-50 text-center">
+              <div className="w-25 text-center md:w-50">
                 <a href="#">
                   <Image
                     width={200}
@@ -105,12 +105,12 @@ export default function Home() {
                     loading="lazy"
                     alt=""
                   />
-                  <span className="inline-block mt-1.5 md:mt-2.5 font-DanaDemibold text-sm md:text-xl text-zinc-700 dark:text-white">
+                  <span className="mt-1.5 inline-block font-DanaDemibold text-sm text-zinc-700 dark:text-white md:mt-2.5 md:text-xl">
                     اوازم جانبی و تجهیزات
                   </span>
                 </a>
               </div>
-              <div className="w-25 md:w-50 text-center">
+              <div className="w-25 text-center md:w-50">
                 <a href="#">
                   <Image
                     width={200}
@@ -119,12 +119,12 @@ export default function Home() {
                     loading="lazy"
                     alt=""
                   />
-                  <span className="inline-block mt-1.5 md:mt-2.5 font-DanaDemibold text-sm md:text-xl text-zinc-700 dark:text-white">
+                  <span className="mt-1.5 inline-block font-DanaDemibold text-sm text-zinc-700 dark:text-white md:mt-2.5 md:text-xl">
                     اسپرسوساز
                   </span>
                 </a>
               </div>
-              <div className="w-25 md:w-50 text-center">
+              <div className="w-25 text-center md:w-50">
                 <a href="#">
                   <Image
                     width={200}
@@ -133,12 +133,12 @@ export default function Home() {
                     loading="lazy"
                     alt=""
                   />
-                  <span className="inline-block mt-1.5 md:mt-2.5 font-DanaDemibold text-sm md:text-xl text-zinc-700 dark:text-white">
+                  <span className="mt-1.5 inline-block font-DanaDemibold text-sm text-zinc-700 dark:text-white md:mt-2.5 md:text-xl">
                     پک تستر قهوه
                   </span>
                 </a>
               </div>
-              <div className="w-25 md:w-50 text-center">
+              <div className="w-25 text-center md:w-50">
                 <a href="#">
                   <Image
                     width={200}
@@ -147,7 +147,7 @@ export default function Home() {
                     loading="lazy"
                     alt=""
                   />
-                  <span className="inline-block mt-1.5 md:mt-2.5 font-DanaDemibold text-sm md:text-xl text-zinc-700 dark:text-white">
+                  <span className="mt-1.5 inline-block font-DanaDemibold text-sm text-zinc-700 dark:text-white md:mt-2.5 md:text-xl">
                     قهوه ترک
                   </span>
                 </a>
@@ -159,7 +159,7 @@ export default function Home() {
         <section className="best-selling mb-8 md:mb-20">
           <div className="container">
             {/* section Head */}
-            <div className="flex items-end justify-between mb-5 md:mb-12 select-none">
+            <div className="mb-5 flex select-none items-end justify-between md:mb-12">
               <div>
                 <h3 className="section-title">محصولات پرفروش</h3>
                 <span className="section-subtitle">
@@ -167,13 +167,13 @@ export default function Home() {
                 </span>
               </div>
               <div className="flex gap-x-3 md:gap-x-[18px] lg:gap-x-[20px]">
-                <div className="swiper-button-prev-custom flex-center w-9 h-9 md:w-10 md:h10 bg-white text-zinc-700 shadow-normal rounded-full hover:bg-gray-300 dark:hover:text-zinc-700 transition-all cursor-pointer">
-                  <svg className="w-5 h-5 md:w-[26px] md:h-[26px] rotate-180">
+                <div className="swiper-button-prev-custom flex-center md:h10 h-9 w-9 cursor-pointer rounded-full bg-white text-zinc-700 shadow-normal transition-all hover:bg-gray-300 dark:hover:text-zinc-700 md:w-10">
+                  <svg className="h-5 w-5 rotate-180 md:h-[26px] md:w-[26px]">
                     <use href="#chevron-left-mini"></use>
                   </svg>
                 </div>
-                <div className="swiper-button-next-custom flex-center w-9 h-9 md:w-10 md:h10 bg-white text-zinc-700 shadow-normal rounded-full hover:bg-gray-300 dark:hover:text-zinc-700 transition-all cursor-pointer">
-                  <svg className="w-5 h-5 md:w-[26px] md:h-[26px]">
+                <div className="swiper-button-next-custom flex-center md:h10 h-9 w-9 cursor-pointer rounded-full bg-white text-zinc-700 shadow-normal transition-all hover:bg-gray-300 dark:hover:text-zinc-700 md:w-10">
+                  <svg className="h-5 w-5 md:h-[26px] md:w-[26px]">
                     <use href="#chevron-left-mini"></use>
                   </svg>
                 </div>
@@ -186,8 +186,8 @@ export default function Home() {
 
         <section className="coffee-club mb-8 md:mb-20 ">
           <div className="container">
-            <div className="flex items-center flex-wrap lg:flex-nowrap md:gap-x-3 xl:gap-x-24 gap-y-9 lg:h-36 py-8 lg:py-0 px-3 lg:px-5 xl:px-11 text-white bg-gradient-to-r from-emerald-500 to-emerald-600 rounded-2xl">
-              <div className="flex items-center md:shrink-0 gap-x-3 lg:gap-x-4 xl:gap-x-6 ">
+            <div className="flex flex-wrap items-center gap-y-9 rounded-2xl bg-gradient-to-r from-emerald-500 to-emerald-600 px-3 py-8 text-white md:gap-x-3 lg:h-36 lg:flex-nowrap lg:px-5 lg:py-0 xl:gap-x-24 xl:px-11">
+              <div className="flex items-center gap-x-3 md:shrink-0 lg:gap-x-4 xl:gap-x-6 ">
                 <Image
                   src="/images/club/diamond.png"
                   width={87}
@@ -196,7 +196,7 @@ export default function Home() {
                   alt=""
                 />
                 <div>
-                  <h4 className="font-MorabbaBold text-2xl md:text-5xl mb-2">
+                  <h4 className="mb-2 font-MorabbaBold text-2xl md:text-5xl">
                     کافی کلاب
                   </h4>
                   <p className="font-MorabbaLight text-lg md:text-2xl">
@@ -205,24 +205,24 @@ export default function Home() {
                 </div>
               </div>
 
-              <div className="flex justify-between w-full">
+              <div className="flex w-full justify-between">
                 <div className="flex items-center gap-x-2 lg:gap-x-3 xl:gap-x-5">
-                  <div className="w-[72px] h-[72px] md:w-[98px] md:h-[98px] text-center text-emerald-600 bg-white py-1.5 md:pt-5 md:pb-1 rounded-2xl">
-                    <svg className="w-10 h-10 md:w-12 md:h-12 mb-1 md:mb-1.5 mx-auto">
+                  <div className="h-[72px] w-[72px] rounded-2xl bg-white py-1.5 text-center text-emerald-600 md:h-[98px] md:w-[98px] md:pb-1 md:pt-5">
+                    <svg className="mx-auto mb-1 h-10 w-10 md:mb-1.5 md:h-12 md:w-12">
                       <use href="#activity"></use>
                     </svg>
                     <span className="text-xs md:text-sm">چرخ و بخت</span>
                   </div>
 
-                  <div className="w-[72px] h-[72px] md:w-[98px] md:h-[98px] text-center text-emerald-600 bg-white py-1.5 md:pt-5 md:pb-1 rounded-2xl">
-                    <svg className="w-10 h-10 md:w-12 md:h-12 mb-1 md:mb-1.5 mx-auto">
+                  <div className="h-[72px] w-[72px] rounded-2xl bg-white py-1.5 text-center text-emerald-600 md:h-[98px] md:w-[98px] md:pb-1 md:pt-5">
+                    <svg className="mx-auto mb-1 h-10 w-10 md:mb-1.5 md:h-12 md:w-12">
                       <use href="#discovery"></use>
                     </svg>
                     <span className="text-xs md:text-sm">ماموریت ها</span>
                   </div>
 
-                  <div className="w-[72px] h-[72px] md:w-[98px] md:h-[98px] text-center text-emerald-600 bg-white py-1.5 md:pt-5 md:pb-1 rounded-2xl">
-                    <svg className="w-10 h-10 md:w-12 md:h-12 mb-1 md:mb-1.5 mx-auto">
+                  <div className="h-[72px] w-[72px] rounded-2xl bg-white py-1.5 text-center text-emerald-600 md:h-[98px] md:w-[98px] md:pb-1 md:pt-5">
+                    <svg className="mx-auto mb-1 h-10 w-10 md:mb-1.5 md:h-12 md:w-12">
                       <use href="#ticket-star"></use>
                     </svg>
                     <span className="text-xs md:text-sm">جایزه ها</span>
@@ -230,16 +230,16 @@ export default function Home() {
                 </div>
 
                 <div className="flex flex-col">
-                  <span className="md:mb-1 font-DanaDemibold text-2xl md:text-3xl">
+                  <span className="font-DanaDemibold text-2xl md:mb-1 md:text-3xl">
                     542
                   </span>
                   <span className="text-xs md:text-sm">امتیــاز شما</span>
                   <a
                     href="#"
-                    className="flex items-center justify-center w-[90px] h-[26px] md:w-[110px] md:h-8 mt-1 md:mt-2 font-DanaMedium text-xs md:text-sm rounded-full bg-gradient-to-r from-orange-200  to-orange-300"
+                    className="mt-1 flex h-[26px] w-[90px] items-center justify-center rounded-full bg-gradient-to-r from-orange-200 to-orange-300 font-DanaMedium text-xs md:mt-2 md:h-8 md:w-[110px]  md:text-sm"
                   >
                     <span>دریافت جایزه</span>
-                    <svg className="w-5 h-5 md:w-6 md:h-6">
+                    <svg className="h-5 w-5 md:h-6 md:w-6">
                       <use href="#chevron-left-mini"></use>
                     </svg>
                   </a>
@@ -253,7 +253,7 @@ export default function Home() {
         <section className="blogs mb-8 md:mb-28">
           <div className="container">
             {/* section Header */}
-            <div className="flex items-end justify-between mb-5 md:mb-12">
+            <div className="mb-5 flex items-end justify-between md:mb-12">
               <div>
                 <h2 className="section-title">مطالب خواندنی</h2>
               </div>
@@ -261,7 +261,7 @@ export default function Home() {
               <a href="#" className="section-link">
                 <span className="hidden md:inline-block">مشاهده همه مطالب</span>
                 <span className="inline-block md:hidden">مشاهده همه</span>
-                <svg className="w-5 h-5">
+                <svg className="h-5 w-5">
                   <use href="#chevron-left-mini"></use>
                 </svg>
               </a>
@@ -275,27 +275,27 @@ export default function Home() {
         {/* contact us */}
         <section className="contact-us mb-16 md:mb-28 ">
           <div className="container">
-            <div className="flex flex-col md:flex-row items-center md:items-start gap-y-8 md:gap-x-5">
+            <div className="flex flex-col items-center gap-y-8 md:flex-row md:items-start md:gap-x-5">
               <Image
                 width={296}
                 height={304.88}
                 src="/images/contact.png"
-                className="max-w-[296px] w-full shrink-0"
+                className="w-full max-w-[296px] shrink-0"
                 alt=""
               />
-              <div className="text-zinc-700 dark:text-white flex flex-col items-center md:items-start">
-                <h3 className="font-MorabbaMedium text-2xl md:text-5xl mb-0.5 md:mb1.5">
+              <div className="flex flex-col items-center text-zinc-700 dark:text-white md:items-start">
+                <h3 className="md:mb1.5 mb-0.5 font-MorabbaMedium text-2xl md:text-5xl">
                   یکی از بهترین قهوه ها !
                 </h3>
                 <span className="font-MorabbaLight text-lg md:text-3xl/[48px]">
                   کیفیت قهوه را از ما بخواهید ...
                 </span>
-                <div className="flex gap-x-2.5 my-5 md:my-6">
-                  <span className="inline-block w-1 h-1 bg-zinc-700 dark:bg-gray-400 rounded-full"></span>
-                  <span className="inline-block w-1 h-1 bg-zinc-700 dark:bg-gray-400 rounded-full"></span>
-                  <span className="inline-block w-1 h-1 bg-zinc-700 dark:bg-gray-400 rounded-full"></span>
+                <div className="my-5 flex gap-x-2.5 md:my-6">
+                  <span className="inline-block h-1 w-1 rounded-full bg-zinc-700 dark:bg-gray-400"></span>
+                  <span className="inline-block h-1 w-1 rounded-full bg-zinc-700 dark:bg-gray-400"></span>
+                  <span className="inline-block h-1 w-1 rounded-full bg-zinc-700 dark:bg-gray-400"></span>
                 </div>
-                <p className="text-lg md:text-2xl text-center md:text-justify">
+                <p className="text-center text-lg md:text-justify md:text-2xl">
                   فضای گرم و دنج ما را احساس کنید، جایی که همه می توانند قهوه
                   معطری پیدا کنند و دسرهای خوشمزه ما را که کاملاً با قهوه داغ
                   همراه شده است، امتحان کنند. فضای داخلی شیک و کارکنان خوش
@@ -303,10 +303,10 @@ export default function Home() {
                 </p>
                 <a
                   href="#"
-                  className="inline-flex items-center justify-center gap-x-2 mt-5 md:mt-6 text-xl tracking-tightest px-6 h-[50px] md:h-[60px] border md:border-2 border-orange-300 rounded-full text-orange-300"
+                  className="mt-5 inline-flex h-[50px] items-center justify-center gap-x-2 rounded-full border border-orange-300 px-6 text-xl tracking-tightest text-orange-300 md:mt-6 md:h-[60px] md:border-2"
                 >
                   <span>ثبت سفارش تلفنی</span>
-                  <svg className="w-5 h-5 md:w-8 md:h-8">
+                  <svg className="h-5 w-5 md:h-8 md:w-8">
                     <use href="#phone"></use>
                   </svg>
                 </a>
@@ -318,9 +318,9 @@ export default function Home() {
         {/* services */}
         <section className="services mb-12 lg:mb-36">
           <div className="container">
-            <div className="flex items-center justify-between flex-wrap gap-y-11 child:w-1/2 lg:child:w-auto text-zinc-700 dark:text-white">
+            <div className="flex flex-wrap items-center justify-between gap-y-11 text-zinc-700 child:w-1/2 dark:text-white lg:child:w-auto">
               {/* box */}
-              <div className="flex items-center flex-col sm:flex-row gap-x-4 gap-y-5 text-center lg:text-right">
+              <div className="flex flex-col items-center gap-x-4 gap-y-5 text-center sm:flex-row lg:text-right">
                 {/* svg */}
                 <svg
                   className="dark:hidden"
@@ -440,7 +440,7 @@ export default function Home() {
                 </svg>
 
                 <div>
-                  <h5 className="mb-1 md:mb-3.5 text-sm/6 md:text-lg font-DanaDemibold">
+                  <h5 className="mb-1 font-DanaDemibold text-sm/6 md:mb-3.5 md:text-lg">
                     پشتیبانی شبانه روزی
                   </h5>
                   <span className="text-xs md:text-sm/6">
@@ -450,7 +450,7 @@ export default function Home() {
               </div>
 
               {/* box */}
-              <div className="flex items-center flex-col sm:flex-row gap-x-4 gap-y-5 text-center lg:text-right">
+              <div className="flex flex-col items-center gap-x-4 gap-y-5 text-center sm:flex-row lg:text-right">
                 {/* svg */}
                 <svg
                   className="dark:hidden"
@@ -602,7 +602,7 @@ export default function Home() {
                 </svg>
 
                 <div>
-                  <h5 className="mb-1 md:mb-3.5 text-sm/6 md:text-lg font-DanaDemibold">
+                  <h5 className="mb-1 font-DanaDemibold text-sm/6 md:mb-3.5 md:text-lg">
                     امکان تحویل اکسپرس
                   </h5>
                   <span className="text-xs md:text-sm/6">
@@ -612,7 +612,7 @@ export default function Home() {
               </div>
 
               {/* box */}
-              <div className="flex items-center flex-col sm:flex-row gap-x-4 gap-y-5 text-center lg:text-right">
+              <div className="flex flex-col items-center gap-x-4 gap-y-5 text-center sm:flex-row lg:text-right">
                 {/* svg */}
                 <svg
                   className="dark:hidden"
@@ -665,7 +665,7 @@ export default function Home() {
                   />
                 </svg>
                 <div>
-                  <h5 className="mb-1 md:mb-3.5 text-sm/6 md:text-lg font-DanaDemibold">
+                  <h5 className="mb-1 font-DanaDemibold text-sm/6 md:mb-3.5 md:text-lg">
                     رست تخصصی
                   </h5>
                   <span className="text-xs md:text-sm/6">
@@ -675,7 +675,7 @@ export default function Home() {
               </div>
 
               {/* box */}
-              <div className="flex items-center flex-col sm:flex-row gap-x-4 gap-y-5 text-center lg:text-right">
+              <div className="flex flex-col items-center gap-x-4 gap-y-5 text-center sm:flex-row lg:text-right">
                 {/* svg */}
                 <svg
                   className="dark:hidden"
@@ -729,7 +729,7 @@ export default function Home() {
                 </svg>
 
                 <div>
-                  <h5 className="mb-1 md:mb-3.5 text-sm/6 md:text-lg font-DanaDemibold">
+                  <h5 className="mb-1 font-DanaDemibold text-sm/6 md:mb-3.5 md:text-lg">
                     اکسسوری قهوه
                   </h5>
                   <span className="text-xs md:text-sm/6">

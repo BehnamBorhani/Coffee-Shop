@@ -9,38 +9,44 @@
   /* Font Dana */
   @font-face {
     font-family: "Dana"; /* 400 */
-    src: local("Dana"),
+    src:
+      local("Dana"),
       url("/fonts/dana/woff2/DanaFaNum-Regular.woff2") format("woff2");
     font-display: swap;
   }
   @font-face {
     font-family: "Dana Medium"; /* 500 */
-    src: local("Dana Medium"),
+    src:
+      local("Dana Medium"),
       url("/fonts/dana/woff2/DanaFaNum-Medium.woff2") format("woff2");
     font-display: swap;
   }
   @font-face {
     font-family: "Dana DemiBold"; /* 600 */
-    src: local("Dana DemiBold"),
+    src:
+      local("Dana DemiBold"),
       url("/fonts/dana/woff2/DanaFaNum-DemiBold.woff2") format("woff2");
     font-display: swap;
   }
   /* Font Morabba */
   @font-face {
     font-family: "Morabba Light";
-    src: local("Morabba Light"),
+    src:
+      local("Morabba Light"),
       url("/fonts/morabba/woff2/Morabba-Light.woff2") format("woff2");
     font-display: swap;
   }
   @font-face {
     font-family: "Morabba Medium";
-    src: local("Morabba Medium"),
+    src:
+      local("Morabba Medium"),
       url("/fonts/morabba/woff2/Morabba-Medium.woff2") format("woff2");
     font-display: swap;
   }
   @font-face {
     font-family: "Morabba Bold";
-    src: local("Morabba Bold"),
+    src:
+      local("Morabba Bold"),
       url("/fonts/morabba/woff2/Morabba-Bold.woff2") format("woff2");
     font-display: swap;
   }
@@ -52,7 +58,7 @@
 
 @layer components {
   .submenu {
-    @apply hidden flex-col gap-y-3 pr-7 mt-3 text-sm text-zinc-600 dark:text-white;
+    @apply mt-3 hidden flex-col gap-y-3 pr-7 text-sm text-zinc-600 dark:text-white;
   }
   .submenu--open {
     @apply flex;
@@ -65,7 +71,7 @@
    } */
   /* or */
   .submenu__item--active {
-    @apply relative text-orange-300 pr-2.5;
+    @apply relative pr-2.5 text-orange-300;
   }
   .submenu__item--active::after {
     content: "";
@@ -82,7 +88,7 @@
   }
 
   .overlay {
-    @apply invisible opacity-0 fixed inset-0 w-full h-full z-10 bg-black/40 md:hidden transition-all;
+    @apply invisible fixed inset-0 z-10 h-full w-full bg-black/40 opacity-0 transition-all md:hidden;
   }
   .overlay--visible {
     @apply visible opacity-100;
@@ -104,13 +110,13 @@
   }
 
   .section-title {
-    @apply text-2xl md:text-5xl font-MorabbaMedium text-zinc-700 dark:text-white;
+    @apply font-MorabbaMedium text-2xl text-zinc-700 dark:text-white md:text-5xl;
   }
   .section-subtitle {
-    @apply inline-block text-lg md:text-3xl font-MorabbaLight mt-0.5 md:mt-1.5 text-zinc-700 dark:text-white;
+    @apply mt-0.5 inline-block font-MorabbaLight text-lg text-zinc-700 dark:text-white md:mt-1.5 md:text-3xl;
   }
   .section-link {
-    @apply flex items-center md:gap-x-1 h-10 pr-3 pl-1 text-base md:text-xl text-orange-300 hover:bg-orange-300/20 rounded-md tracking-tightest;
+    @apply flex h-10 items-center rounded-md pl-1 pr-3 text-base tracking-tightest text-orange-300 hover:bg-orange-300/20 md:gap-x-1 md:text-xl;
   }
 
   .offer {
