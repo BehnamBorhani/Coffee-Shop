@@ -5,6 +5,7 @@ import "./globals.css";
 import localFont from "next/font/local";
 import Overlay from "./_components/overlay/overlay";
 import Footer from "./_components/footer/footer";
+import AOSInit from "@/utils/aos";
 
 const dana = localFont({
   src: [
@@ -63,6 +64,7 @@ export default function RootLayout({ children }) {
       className={`dark ${dana.variable} ${morabba.variable}`}
     >
       <body className="bg-gray-100 dark:bg-zinc-800">
+        <AOSInit />
         <SVGSymbols />
         <AppProvider>
           <Navbar />

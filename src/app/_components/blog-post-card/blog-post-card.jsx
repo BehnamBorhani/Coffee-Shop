@@ -3,7 +3,7 @@ import React from "react";
 
 const BlogPostCard = () => {
   return (
-    <div className="group flex gap-x-2.5 rounded-2xl bg-white p-2.5 shadow-normal dark:bg-zinc-700 sm:block md:pb-2">
+    <div className="group flex gap-x-2.5 rounded-2xl bg-white p-2.5 shadow-normal dark:bg-zinc-700 sm:block md:pb-2" data-aos="flip-left">
       <div className="relative h-[130px] w-[130px] shrink-0 overflow-hidden rounded-2xl rounded-bl-4xl sm:mb-4 sm:h-auto sm:w-auto">
         <Image
           width={285}

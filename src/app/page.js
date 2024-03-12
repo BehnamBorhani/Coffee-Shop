@@ -41,7 +41,10 @@ export default function Home() {
             </div>
 
             {/* section Body */}
-            <div className="grid grid-cols-2 gap-3.5 sm:grid-cols-3 md:gap-5 lg:grid-cols-4 ">
+            <div
+              className="grid grid-cols-2 gap-3.5 sm:grid-cols-3 md:gap-5 lg:grid-cols-4"
+              data-aos="fade-up"
+            >
               <ProductCard />
               <ProductCard />
               <ProductCard />
@@ -52,9 +55,10 @@ export default function Home() {
 
         <section className="category-banner mb-10 mt-8 md:my-20">
           <div className="container">
-            <div className="grid grid-cols-1 gap-5 text-white md:grid-cols-2">
+            <div className="grid grid-cols-1 gap-5 overflow-x-hidden text-white md:grid-cols-2">
               <a
                 href="#"
+                data-aos="fade-left"
                 className="category-banner_item1 flex h-[142px] flex-col justify-center rounded-2xl pr-7 md:h-[248px] md:pr-12"
               >
                 <span className="mb-4 font-DanaDemibold text-2xl/6 md:mb-7 md:text-4xl/6">
@@ -66,6 +70,7 @@ export default function Home() {
               </a>
               <a
                 href="#"
+                data-aos="fade-right"
                 className="category-banner_item2 flex h-[142px] flex-col justify-center rounded-2xl pr-7 md:h-[248px] md:pr-12"
               >
                 <span className="mb-4 font-DanaDemibold text-2xl/6 md:mb-7 md:text-4xl/6">
@@ -82,7 +87,7 @@ export default function Home() {
         <section className="products-categories mb-10 md:mb-20">
           <div className="container">
             <div className="flex flex-wrap items-center justify-center gap-x-[29px] gap-y-6 md:gap-x-[65px] ">
-              <div className="w-25 text-center md:w-50">
+              <div className="w-25 text-center md:w-50" data-aos="zoom-in">
                 <a href="#">
                   <Image
                     width={200}
@@ -96,7 +101,7 @@ export default function Home() {
                   </span>
                 </a>
               </div>
-              <div className="w-25 text-center md:w-50">
+              <div className="w-25 text-center md:w-50" data-aos="zoom-in">
                 <a href="#">
                   <Image
                     width={200}
@@ -110,7 +115,7 @@ export default function Home() {
                   </span>
                 </a>
               </div>
-              <div className="w-25 text-center md:w-50">
+              <div className="w-25 text-center md:w-50" data-aos="zoom-in">
                 <a href="#">
                   <Image
                     width={200}
@@ -124,7 +129,7 @@ export default function Home() {
                   </span>
                 </a>
               </div>
-              <div className="w-25 text-center md:w-50">
+              <div className="w-25 text-center md:w-50" data-aos="zoom-in">
                 <a href="#">
                   <Image
                     width={200}
@@ -138,7 +143,7 @@ export default function Home() {
                   </span>
                 </a>
               </div>
-              <div className="w-25 text-center md:w-50">
+              <div className="w-25 text-center md:w-50" data-aos="zoom-in">
                 <a href="#">
                   <Image
                     width={200}
@@ -186,7 +191,10 @@ export default function Home() {
 
         <section className="coffee-club mb-8 md:mb-20 ">
           <div className="container">
-            <div className="flex flex-wrap items-center gap-y-9 rounded-2xl bg-gradient-to-r from-emerald-500 to-emerald-600 px-3 py-8 text-white md:gap-x-3 lg:h-36 lg:flex-nowrap lg:px-5 lg:py-0 xl:gap-x-24 xl:px-11">
+            <div
+              className="flex flex-wrap items-center gap-y-9 rounded-2xl bg-gradient-to-r from-emerald-500 to-emerald-600 px-3 py-8 text-white md:gap-x-3 lg:h-36 lg:flex-nowrap lg:px-5 lg:py-0 xl:gap-x-24 xl:px-11"
+              data-aos="zoom-in-up"
+            >
               <div className="flex items-center gap-x-3 md:shrink-0 lg:gap-x-4 xl:gap-x-6 ">
                 <Image
                   src="/images/club/diamond.png"
@@ -320,7 +328,10 @@ export default function Home() {
           <div className="container">
             <div className="flex flex-wrap items-center justify-between gap-y-11 text-zinc-700 child:w-1/2 dark:text-white lg:child:w-auto">
               {/* box */}
-              <div className="flex flex-col items-center gap-x-4 gap-y-5 text-center sm:flex-row lg:text-right">
+              <div
+                className="flex flex-col items-center gap-x-4 gap-y-5 text-center sm:flex-row lg:text-right"
+                data-aos="fade-up"
+              >
                 {/* svg */}
                 <svg
                   className="dark:hidden"
@@ -450,7 +461,10 @@ export default function Home() {
               </div>
 
               {/* box */}
-              <div className="flex flex-col items-center gap-x-4 gap-y-5 text-center sm:flex-row lg:text-right">
+              <div
+                className="flex flex-col items-center gap-x-4 gap-y-5 text-center sm:flex-row lg:text-right"
+                data-aos="fade-up"
+              >
                 {/* svg */}
                 <svg
                   className="dark:hidden"
@@ -612,7 +626,10 @@ export default function Home() {
               </div>
 
               {/* box */}
-              <div className="flex flex-col items-center gap-x-4 gap-y-5 text-center sm:flex-row lg:text-right">
+              <div
+                className="flex flex-col items-center gap-x-4 gap-y-5 text-center sm:flex-row lg:text-right"
+                data-aos="fade-up"
+              >
                 {/* svg */}
                 <svg
                   className="dark:hidden"
@@ -675,7 +692,10 @@ export default function Home() {
               </div>
 
               {/* box */}
-              <div className="flex flex-col items-center gap-x-4 gap-y-5 text-center sm:flex-row lg:text-right">
+              <div
+                className="flex flex-col items-center gap-x-4 gap-y-5 text-center sm:flex-row lg:text-right"
+                data-aos="fade-up"
+              >
                 {/* svg */}
                 <svg
                   className="dark:hidden"
