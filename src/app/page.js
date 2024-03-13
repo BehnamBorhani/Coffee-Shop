@@ -1,6 +1,3 @@
-"use client";
-import { useAppContext } from "@/contexts/app/app-context";
-import { useEffect } from "react";
 import Header from "./_components/header/header";
 import ProductCard from "./_components/product-card/product-card";
 import Link from "next/link";
@@ -9,11 +6,6 @@ import Image from "next/image";
 import BlogPostCardList from "./_components/blog-post-card-list/blog-post-card-list";
 
 export default function Home() {
-  const { theme } = useAppContext();
-  useEffect(() => {
-    document.documentElement.classList.toggle("dark");
-  }, [theme]);
-
   return (
     <>
       <Header />
@@ -161,33 +153,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="best-selling mb-8 md:mb-20">
-          <div className="container">
-            {/* section Head */}
-            <div className="mb-5 flex select-none items-end justify-between md:mb-12">
-              <div>
-                <h3 className="section-title">محصولات پرفروش</h3>
-                <span className="section-subtitle">
-                  پیشنهاد قهوه خورها ...{" "}
-                </span>
-              </div>
-              <div className="flex gap-x-3 md:gap-x-[18px] lg:gap-x-[20px]">
-                <div className="swiper-button-prev-custom flex-center md:h10 h-9 w-9 cursor-pointer rounded-full bg-white text-zinc-700 shadow-normal transition-all hover:bg-gray-300 dark:hover:text-zinc-700 md:w-10">
-                  <svg className="h-5 w-5 rotate-180 md:h-[26px] md:w-[26px]">
-                    <use href="#chevron-left-mini"></use>
-                  </svg>
-                </div>
-                <div className="swiper-button-next-custom flex-center md:h10 h-9 w-9 cursor-pointer rounded-full bg-white text-zinc-700 shadow-normal transition-all hover:bg-gray-300 dark:hover:text-zinc-700 md:w-10">
-                  <svg className="h-5 w-5 md:h-[26px] md:w-[26px]">
-                    <use href="#chevron-left-mini"></use>
-                  </svg>
-                </div>
-              </div>
-            </div>
-
-            <BestSellingProducts />
-          </div>
-        </section>
+        <BestSellingProducts />
 
         <section className="coffee-club mb-8 md:mb-20 ">
           <div className="container">

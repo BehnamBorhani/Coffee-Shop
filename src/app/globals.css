@@ -2,8 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url("/styles/swiper-bundle.min.css");
-@import url("https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css");
+/* @import url("/styles/swiper-bundle.min.css");
+@import url("https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"); */
 
 @layer base {
   /* Font Dana */

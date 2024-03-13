@@ -16,6 +16,10 @@ const Navbar = () => {
   };
 
   useEffect(() => {
+    document.documentElement.classList.toggle("dark");
+  }, [theme]);
+
+  useEffect(() => {
     changeOverlayShow(isMobileMenuOpen || isMobileCartOpen);
   }, [isMobileMenuOpen, isMobileCartOpen]);
 
