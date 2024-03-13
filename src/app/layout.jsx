@@ -62,6 +62,7 @@ export default function RootLayout({ children }) {
       lang="fa"
       dir="rtl"
       className={`dark ${dana.variable} ${morabba.variable}`}
+      data-theme="dark"
     >
       <body className="bg-gray-100 dark:bg-zinc-800">
         <AOSInit />

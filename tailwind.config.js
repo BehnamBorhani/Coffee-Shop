@@ -69,6 +69,9 @@ module.exports = {
       // => @media (min-width: 1536px) { ... }
     },
   },
+  daisyui: {
+    themes: ["light", "dark"],
+  },
   plugins: [
     function ({ addVariant }) {
       addVariant("child", "&>*");
