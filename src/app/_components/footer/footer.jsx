@@ -1,16 +1,10 @@
 import React from "react";
+import ScrollToTopBtn from "../scroll-to-top-btn/scroll-to-top-btn";
 
 const Footer = () => {
   return (
     <footer className="relative bg-zinc-700 py-8 md:pb-11 md:pt-[62px] ">
-      <svg className="absolute -top-[1px] left-0 right-0 mx-auto hidden h-[22px] w-[100px] text-gray-100 dark:text-zinc-800 md:inline-block">
-        <use href="#curve-footer"></use>
-      </svg>
-      <div className="absolute -top-[1px] left-0 right-0 mx-auto hidden h-[30px] w-[30px] -translate-y-2/4 items-center justify-center rounded-full border-2 border-orange-300 md:flex">
-        <svg className="size-5 rotate-180 text-zinc-700 dark:text-white">
-          <use href="#chevron-down"></use>
-        </svg>
-      </div>
+      <ScrollToTopBtn />
 
       <div className="mx-auto px-4 text-gray-300 sm:w-[94%] md:px-0 lg:w-[90%]">
         <div className="flex flex-wrap justify-between ">
