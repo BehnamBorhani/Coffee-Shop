@@ -12,6 +12,9 @@ const ScrollToTopBtn = () => {
 
   return (
     <>
+      <svg className="absolute -top-[22px] left-0 right-0 mx-auto hidden h-[22px] w-[100px] rotate-180 text-gray-100 dark:text-zinc-800 md:inline-block">
+        <use href="#curve-footer"></use>
+      </svg>
       <svg className="absolute -top-[1px] left-0 right-0 mx-auto hidden h-[22px] w-[100px] text-gray-100 dark:text-zinc-800 md:inline-block">
         <use href="#curve-footer"></use>
       </svg>

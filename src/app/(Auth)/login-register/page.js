@@ -1,8 +1,8 @@
 "use client";
 import { useState } from "react";
 import { authTypes } from "@/utils/constants";
-import Login from "./Login";
-import Register from "./Register";
+import Login from "./_components/Login";
+import Register from "./_components/Register";
 
 const login_register = () => {
   const [authType, setAuthType] = useState(authTypes.LOGIN);
@@ -12,7 +12,7 @@ const login_register = () => {
 
   return (
     <div className="flex min-h-screen w-full flex-col overflow-hidden md:flex-row">
-      <section className="bg-brown-950 flex-1">
+      <section className="flex-1 bg-brown-950">
         <img
           src="https://neurosciencenews.com/files/2023/06/coffee-brain-caffeine-neuroscincces.jpg"
           className="h-full object-cover"
@@ -20,7 +20,7 @@ const login_register = () => {
         />
       </section>
       <div
-        className="container flex flex-1 items-center justify-center"
+        className="container flex flex-1 items-center justify-center py-8"
         data-aos="fade-up"
       >
         {authType === authTypes.LOGIN ? (

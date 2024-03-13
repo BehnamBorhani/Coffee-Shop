@@ -1,6 +1,7 @@
 "use client";
 import { useAppContext } from "@/contexts/app/app-context";
 import Image from "next/image";
+import Link from "next/link";
 import React, { useEffect, useState } from "react";
 
 const Navbar = () => {
@@ -52,7 +53,7 @@ const Navbar = () => {
             {/* menu */}
             <ul className="flex h-full gap-x-5 text-xl tracking-tightest text-gray-300 child:leading-[56px] lg:gap-x-9 ">
               <li className="font-DanaMedium text-orange-200">
-                <a href="#">صفحه اصلی</a>
+                <Link href="/">صفحه اصلی</Link>
               </li>
               <li className="group relative">
                 {/* Has sub */}
@@ -216,15 +217,15 @@ const Navbar = () => {
             {/* divide Border */}
             <span className="block h-14 w-px bg-white/20"></span>
             {/* login link */}
-            <a
-              href="#"
+            <Link
+              href="/login-register"
               className="flex items-center gap-x-2.5 tracking-tightest"
             >
               <svg className="h-8 w-8">
                 <use href="#arrow-left-on-rectangle"></use>
               </svg>
               <span className="hidden xl:inline-block"> ورود | ثبت نام</span>
-            </a>
+            </Link>
           </div>
         </div>
       </header>
@@ -267,12 +268,12 @@ const Navbar = () => {
           </div>
 
           <div className="h10 mb-4 flex items-center rounded-md bg-orange-200/20 pr-2.5 text-orange-300 ">
-            <a href="#" className="flex items-center gap-x-2">
+            <Link href="/" className="flex items-center gap-x-2">
               <svg className="h-5 w-5">
                 <use href="#home"></use>
               </svg>
               <span>صفحه اصلی</span>
-            </a>
+            </Link>
           </div>
           <ul className="mb-4 space-y-6 text-zinc-600 child:pr-2.5 dark:text-white ">
             <li>
