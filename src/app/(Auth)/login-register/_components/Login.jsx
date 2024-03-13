@@ -2,16 +2,21 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import Sms from "./Sms";
+import ForgetPassword from "./ForgetPassword";
 
 const Login = ({ showRegisterForm }) => {
   const [isLoginWithOtp, setIsLoginWithOtp] = useState(false);
+  const [isForgetPassFormShow, setIsForgetPassFormShow] = useState(false);
 
   const hideOtpForm = () => setIsLoginWithOtp(false);
+  const hideForgetPassForm = () => setIsForgetPassFormShow(false);
 
   return (
     <>
       {isLoginWithOtp ? (
         <Sms hideOtpForm={hideOtpForm} />
+      ) : isForgetPassFormShow ? (
+        <ForgetPassword hideForgetPassForm={hideForgetPassForm} />
       ) : (
         <>
           <div className="grid w-[90%] max-w-[380px] rounded bg-white px-6 py-[10px] text-center font-Dana text-black shadow-xl">
@@ -37,12 +42,14 @@ const Login = ({ showRegisterForm }) => {
             <button className="cursor-pointer rounded bg-brown-950 p-3 text-white">
               ورود
             </button>
-            <Link
-              href={"/forget-password"}
+
+            <p
               className="my-4 cursor-pointer text-xs"
+              onClick={() => setIsForgetPassFormShow(true)}
             >
               رمز عبور را فراموش کرده اید؟
-            </Link>
+            </p>
+
             <button
               className="cursor-pointer rounded bg-brown-950 p-3 text-white"
               onClick={() => setIsLoginWithOtp(true)}
